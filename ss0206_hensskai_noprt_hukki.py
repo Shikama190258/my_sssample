@@ -73,44 +73,44 @@ def play2():
     
 root = tk.Tk()
 root.title("すばやくしはらいチャレンジゲーム")
-root.minsize(1240, 700)#henss
+root.minsize(1240, 700)#0216
 root.option_add("*font", ["メイリオ", 24])
 numF = 0
 call = " "
 num = random.randint(1,1000)
 imgSS0 = tk.PhotoImage(file = 'imgSS/siharaidekiru.png', master = root)
-mojiC = tk.Label(text = "                                            しはらいできる？                                             ", bg="#FAFAD2", image=imgSS0)#henss
+mojiC = tk.Label(text = "                                            しはらいできる？                                             ", bg="#FAFAD2", image=imgSS0)#0216
 mojiC.pack(anchor='n',expand=1)
-mojiA = tk.Text(height=1, width=62, wrap="none")#henss1223
+mojiA = tk.Text(height=1, width=62, wrap="none")#02161223
 mojiA.tag_configure("r", foreground="#000000")
 mojiA.tag_configure("g", foreground="#FF0000")
 mojiA.tag_configure("b", foreground="#000000")
-mojiA.insert("end", "　　　　　　　　　　結果発表ボタンを", 'r')#henss1223
+mojiA.insert("end", "　　　　　　　　　　結果発表ボタンを", 'r')#02161223
 mojiA.insert("end", "押して", 'g')
 mojiA.insert("end", "次へ行こう!", 'b')
 mojiA.configure(state="disabled") # 読取専用に
-mojiB = tk.Text(height=1, width=62, wrap="none")#henss1223
+mojiB = tk.Text(height=1, width=62, wrap="none")#02161223
 mojiB.tag_configure("r", foreground="#FF0000")
 mojiB.tag_configure("g", foreground="#000000")
 mojiB.tag_configure("b", foreground="#000000")
-mojiB.insert("end", "          　　　　クリア!", 'r')#henss1225　↓　↓　も
-mojiB.insert("end", "チャレンジモードが", 'g')#班員
-mojiB.insert("end", "できるようになってるよ!", 'b')#班員
+mojiB.insert("end", "          　　　　クリア!", 'r')#02161225　↓　↓　も
+mojiB.insert("end", "チャレンジモードが", 'g')#hs
+mojiB.insert("end", "できるようになってるよ!", 'b')#hs
 mojiB.configure(state="disabled") # 読取専用に
-mojiBn = tk.Label(height=1, width=62, text = "どれも2回押しでクリア！", bg="white")#henss1223
-mojiD = tk.Text(height=1, width=62, wrap="none")#henss1223
+mojiBn = tk.Label(height=1, width=62, text = "どれも2回押しでクリア！", bg="white")#02161223
+mojiD = tk.Text(height=1, width=62, wrap="none")#02161223
 mojiD.tag_configure("r", foreground="#000000")
 mojiD.tag_configure("g", foreground="#000000")
 mojiD.tag_configure("b", foreground="#000000")
-mojiD.insert("end", "          　　　　　　　　　　　最初", 'r')#henss1223
+mojiD.insert("end", "          　　　　　　　　　　　最初", 'r')#02161223
 mojiD.insert("end", "から", 'g')
 mojiD.insert("end", "やりなおし!", 'b')
 mojiD.configure(state="disabled") # 読取専用に
-mojiE = tk.Text(height=1, width=62, wrap="none")#henss1223
+mojiE = tk.Text(height=1, width=62, wrap="none")#02161223
 mojiE.tag_configure("r", foreground="#000000")
 mojiE.tag_configure("g", foreground="#000000")
 mojiE.tag_configure("b", foreground="#000000")
-mojiE.insert("end", "           　　　　　　　　　　　　クリア", 'r')#henss1223
+mojiE.insert("end", "           　　　　　　　　　　　　クリア", 'r')#02161223
 mojiE.insert("end", "は", 'g')
 mojiE.insert("end", "ならず!", 'b')
 mojiE.configure(state="disabled") # 読取専用に
@@ -121,9 +121,9 @@ mojiG3 = tk.Label(text = "ザクザクモード",width=12, height=2, foreground=
 mojiG4 = tk.Label(text = "チャレンジモード",width=12, height=2, foreground='#ff0000', background='lightslategray')
 mojiG5 = tk.Label(text = "ザクザクモード",width=12, height=2, foreground='#ff0000', background='lightslategray')
 mojiG6 = tk.Label(text = "チャレンジモード",width=12, height=2, foreground='#ff0000', background='lightslategray')
-mojiT = tk.Text(height=1, width=62, wrap="none")#henss1223
-mojiT2 = tk.Text(height=1, width=62, wrap="none")#henss1223
-mojiTg = tk.Text(height=1, width=62, wrap="none")#henss1223
+mojiT = tk.Text(height=1, width=62, wrap="none")#02161223
+mojiT2 = tk.Text(height=1, width=62, wrap="none")#02161223
+mojiTg = tk.Text(height=1, width=62, wrap="none")#02161223
 mojiTg.tag_configure("r", foreground="#000000")
 mojiTg.tag_configure("g", foreground="#FF0000")
 mojiTg.tag_configure("b", foreground="#000000")
@@ -131,7 +131,7 @@ mojiTg.insert("end", "トレーに", 'r')
 mojiTg.insert("end", str('{:.1f}'.format(num)), 'g')
 mojiTg.insert("end", "元分はらって！", 'b')
 mojiTg.configure(state="disabled") # 読取専用に
-mojiTd = tk.Text(height=1, width=62, wrap="none")#henss1223
+mojiTd = tk.Text(height=1, width=62, wrap="none")#02161223
 mojiTd.tag_configure("r", foreground="#000000")
 mojiTd.tag_configure("g", foreground="#FF0000")
 mojiTd.tag_configure("b", foreground="#000000")
@@ -139,31 +139,31 @@ mojiTd.insert("end", "トレーに", 'r')
 mojiTd.insert("end", str(num), 'g')
 mojiTd.insert("end", "ドンはらって！", 'b')
 mojiTd.configure(state="disabled") # 読取専用に
-mojiTn = tk.Text(height=1, width=62, wrap="none")#henss1223
-emojiT = tk.Text(height=1, width=62, wrap="none")#henss1223
+mojiTn = tk.Text(height=1, width=62, wrap="none")#02161223
+emojiT = tk.Text(height=1, width=62, wrap="none")#02161223
 emojiT.tag_configure("r", foreground="#000000")
 emojiT.tag_configure("g", foreground="#FF0000")
 emojiT.tag_configure("b", foreground="#000000")
-emojiT.insert("end", "2つの商品の", 'r')#班員　1225
-emojiT.insert("end", "合計額を", 'g')#班員 1225
-emojiT.insert("end", "ピッタリはらって!", 'b')#班員 1225
+emojiT.insert("end", "2つの商品の", 'r')#hs　1225
+emojiT.insert("end", "合計額を", 'g')#hs 1225
+emojiT.insert("end", "ピッタリはらって!", 'b')#hs 1225
 emojiT.configure(state="disabled")
-emojiTn = tk.Text(height=1, width=62, wrap="none")#まだ使用方法未定　henss1223
+emojiTn = tk.Text(height=1, width=62, wrap="none")#02161223
 mojiN = tk.Label(height=1, width=5, text = "残り秒数", bg="green")
-mojiCp = tk.Text(height=1, width=62, wrap="none")#henss1222
+mojiCp = tk.Text(height=1, width=62, wrap="none")#02161222
 mojiCp.tag_configure("r", foreground="#000000")
 mojiCp.tag_configure("g", foreground="#000000")
 mojiCp.tag_configure("b", foreground="#000000")
-mojiCp.insert("end", "                                    すばやく", 'r')#henss1222
+mojiCp.insert("end", "                                    すばやく", 'r')#02161222
 mojiCp.insert("end", "しはらいチャレンジゲーム", 'g')#1225 ひらがなに
 mojiCp.insert("end", "!", 'b')
 mojiCp.configure(state="disabled") # 読取専用に
-mojiZ = tk.Text(height=1, width=62, wrap="none")#henss1226
+mojiZ = tk.Text(height=1, width=62, wrap="none")#02161226
 mojiZ.tag_configure("r", foreground="#000000")
 mojiZ.tag_configure("g", foreground="#000000")
 mojiZ.tag_configure("b", foreground="#000000")
-mojiZ.insert("end", "                  ゲーム大好きなあなたに", 'r')#henss1226
-mojiZ.insert("end", "ザクザクモード解放!", 'g')#henss1226
+mojiZ.insert("end", "                  ゲーム大好きなあなたに", 'r')#02161226
+mojiZ.insert("end", "ザクザクモード解放!", 'g')#02161226
 mojiZ.insert("end", "チェックしてね!", 'b')
 mojiZ.configure(state="disabled") # 読取専用に
 testM = tk.Label(text = "                                しはらいできる？", bg="#FAFAD2")#0125追加
@@ -171,7 +171,7 @@ testK = tk.Label(text = "                                しはらいできる�
 testRM = tk.Label(text = "                               しはらいできる？", bg="#FAFAD2")#0125追加
 testF = tk.Label(text = "                                しはらいできる？", bg="#FAFAD2")#0125追加
 mojiR = tk.Text(height=1, width=62, wrap="none")#otamesi0125
-canvas = tk.Canvas(root, width = 1240, height = 700)#henss
+canvas = tk.Canvas(root, width = 1240, height = 700)#0216
 canvas.configure(bg="#FAFAD2")
 hantei = 1
 imgSS1 = tk.PhotoImage(file = 'imgSS/undou_deadlisft_woman.png', master = root)
@@ -359,8 +359,8 @@ ret3 = ('g', 'h', 'i')
 ret4 = ('j', 'k', 'l')
 ret5 = ('m', 'n', 'o')
 count = 0
-zaq = 0#henss1226
-chkdel = 0#henss1226
+zaq = 0#02161226
+chkdel = 0#02161226
 img2ID = []
 img3ID = []
 img4ID = []
@@ -385,17 +385,17 @@ def realK3():#0125eatarasikutuika muriyari zousetu
             List_A1.append( {tag:canvas.coords(id)}) # .coordsで座標を取得
             List_C1.append( canvas.coords(id)[0])
             List_C1.append( canvas.coords(id)[1])
-            if ((List_C1[0] >= 500) and (List_C1[1] >= 0)):#henss1223
-                if((List_C1[0] <= 825) and (List_C1[1] <= 200)):#henss1223
+            if ((List_C1[0] >= 500) and (List_C1[1] >= 0)):#02161223
+                if((List_C1[0] <= 825) and (List_C1[1] <= 200)):#02161223
                     xxx = List_A1[0]
                     yyy = xxx.keys()
                     zzz = list(yyy)
                     
                     if zzz[0] == 'img':
                         Knum += 10000
-                    #henss1226↓
-                    elif zzz[0] == 'img1':#henss1226
-                        Knum += 1000000#henss1226
+                    #02161226↓
+                    elif zzz[0] == 'img1':#02161226
+                        Knum += 1000000#02161226
                     elif zzz[0] == 'img2':
                         Knum += 5000
                     elif zzz[0] == 'img3':
@@ -440,7 +440,7 @@ def zahyo():
             List_C1.append( canvas.coords(id)[1])
             
             if ((List_C1[0] >= 500) and (List_C1[1] >= 0)):#判定検知 500, 0, 825, 200
-                if((List_C1[0] <= 825) and (List_C1[1] <= 200)):#henss1223
+                if((List_C1[0] <= 825) and (List_C1[1] <= 200)):#02161223
                 
                     xxx = List_A1[0]
                     yyy = xxx.keys()
@@ -449,9 +449,9 @@ def zahyo():
                     
                     if zzz[0] == 'img':
                         Knum += 10000
-                    #henss1226↓
-                    elif zzz[0] == 'img1':#henss1226
-                        Knum += 1000000#henss1226
+                    #02161226↓
+                    elif zzz[0] == 'img1':#02161226
+                        Knum += 1000000#02161226
                     elif zzz[0] == 'img2':
                         Knum += 5000
                     elif zzz[0] == 'img3':
@@ -536,9 +536,9 @@ def challenge(imgM, imgN, numI):
         imgSS56 = tk.PhotoImage(file = 'imgSS/バナナ_gen.png', master = root)
         imgSS57 = tk.PhotoImage(file = 'imgSS/ビール_gen.png', master = root)
         imgSS58 = tk.PhotoImage(file = 'imgSS/トマト_gen.png', master = root)
-        imgSS59 = tk.PhotoImage(file = 'imgSS/牛乳_gen.png', master = root)#henss1226
-        imgSS60 = tk.PhotoImage(file = 'imgSS/にんじん_gen.png', master = root)#henss1226
-        imgSS61 = tk.PhotoImage(file = 'imgSS/タバコ_gen.png', master = root)#henss1226
+        imgSS59 = tk.PhotoImage(file = 'imgSS/牛乳_gen.png', master = root)#02161226
+        imgSS60 = tk.PhotoImage(file = 'imgSS/にんじん_gen.png', master = root)#02161226
+        imgSS61 = tk.PhotoImage(file = 'imgSS/タバコ_gen.png', master = root)#02161226
         imgSS62 = tk.PhotoImage(file = 'imgSS/レモン_gen.png', master = root)
         imgSS63 = tk.PhotoImage(file = 'imgSS/パン_gen.png', master = root)
         imgSS64 = tk.PhotoImage(file = 'imgSS/チョコ_gen.png', master = root)
@@ -555,7 +555,7 @@ def challenge(imgM, imgN, numI):
         imgSS51 = tk.PhotoImage(file = 'imgSS/ペットボトル_don.png', master = root)
         imgSS52 = tk.PhotoImage(file = 'imgSS/トマト_don.png', master = root)
         imgSS53 = tk.PhotoImage(file = 'imgSS/コーラ_don.png', master = root)    
-        imgSS54 = tk.PhotoImage(file = 'imgSS/メロン_don.png', master = root)#henss1226
+        imgSS54 = tk.PhotoImage(file = 'imgSS/メロン_don.png', master = root)#02161226
         imgSS55 = tk.PhotoImage(file = 'imgSS/バナナ_don.png', master = root)#
         imgSS56 = tk.PhotoImage(file = 'imgSS/カップラーメン_don.png', master = root)
         imgSS57 = tk.PhotoImage(file = 'imgSS/パン_don.png', master = root)#
@@ -563,7 +563,7 @@ def challenge(imgM, imgN, numI):
         imgSS59 = tk.PhotoImage(file = 'imgSS/タバコ_don.png', master = root)
         imgSS60 = tk.PhotoImage(file = 'imgSS/ジャガイモ_don.png', master = root)#
         imgSS61 = tk.PhotoImage(file = 'imgSS/レモン_don.png', master = root)#
-        imgSS62 = tk.PhotoImage(file = 'imgSS/ビール_don.png', master = root)#henss1226
+        imgSS62 = tk.PhotoImage(file = 'imgSS/ビール_don.png', master = root)#02161226
         imgSS63 = tk.PhotoImage(file = 'imgSS/トウモロコシ_don.png', master = root)
         imgSS64 = tk.PhotoImage(file = 'imgSS/フライパン_don.png', master = root)
         imgSS65 = tk.PhotoImage(file = 'imgSS/ハンバーガー_don.png', master = root)
@@ -617,11 +617,11 @@ def challenge(imgM, imgN, numI):
     imgN = imgBox[mon1B]
     
     if gengo2 == 2:
-        nedan = [0.6, 1, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 7.5, 8 , 8.5, 12, 15, 20, 36, 49, 69, 70]#henss1226
+        nedan = [0.6, 1, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 7.5, 8 , 8.5, 12, 15, 20, 36, 49, 69, 70]#02161226
     
     elif gengo2 == 3:
         
-        nedan = [28, 34, 77, 90, 100, 110, 119, 120, 129, 130, 134, 140, 150, 155, 200, 250, 260, 300, 390, 600]#henss1226
+        nedan = [28, 34, 77, 90, 100, 110, 119, 120, 129, 130, 134, 140, 150, 155, 200, 250, 260, 300, 390, 600]#02161226
         
     else:
         nedan = [48, 53, 72, 88, 107, 108, 120, 125, 138, 154, 156, 160, 178, 198, 450, 480, 1226, 1542, 2800, 3800]
@@ -669,12 +669,12 @@ def kekka_fortune():
     zm5button.place_forget()
     
     if hayaku >= 222.22 and hantei >= 3:#skai0125=240or230 realK3iretarabetunoBUGga...
-        #henss1226 skai0125=240or230
-        chkdel = 1#henss1226
+        #02161226 skai0125=240or230
+        chkdel = 1#02161226
     
     if hantei >= 3:
         mojiB.pack(anchor='n',expand=1)
-        mojiK = tk.Label(text = "終了時タイム　残り"+str(format(hayaku, '.1f'))+"秒", width=62, height=1, foreground='#000000', background='#FAFAD2')#henss1223
+        mojiK = tk.Label(text = "終了時タイム　残り"+str(format(hayaku, '.1f'))+"秒", width=62, height=1, foreground='#000000', background='#FAFAD2')#02161223
     
         mojiK.pack(anchor='n',expand=1)
         hayaku = 18.00
@@ -730,7 +730,7 @@ def kekka_fortune():
     elif hantei == 1:
         
         mojiD.pack(anchor='n',expand=1)
-        mojiK = tk.Label(text = "終了時タイム　"+str(format(hayaku, '.1f'))+"秒", width=62, height=1, foreground='#000000', background='#FAFAD2')#henss1223
+        mojiK = tk.Label(text = "終了時タイム　"+str(format(hayaku, '.1f'))+"秒", width=62, height=1, foreground='#000000', background='#FAFAD2')#02161223
         
         mojiK.pack(anchor='n',expand=1)
         hayaku = 18.00
@@ -741,7 +741,7 @@ def kekka_fortune():
     else:
         
         mojiE.pack(anchor='n',expand=1)
-        mojiK = tk.Label(text = "終了時タイム　"+str(format(hayaku, '.1f'))+"秒", width=62, height=1, foreground='#000000', background='#FAFAD2')#henss1223
+        mojiK = tk.Label(text = "終了時タイム　"+str(format(hayaku, '.1f'))+"秒", width=62, height=1, foreground='#000000', background='#FAFAD2')#02161223
         
         mojiK.pack(anchor='n',expand=1)
         hayaku = 18.00
@@ -754,9 +754,9 @@ def kekka_fortune():
     button.place_forget()
     mojiA.pack_forget()
     mojiF.pack_forget()
-    stbutton.place(x = 550, y = 650)#henss1226
+    stbutton.place(x = 550, y = 650)#02161226
     #変更250, 400, image=imgSS11 アマビエ　結果画面でのアマビエの位置を変更
-    canvas.create_image(850, 550, image=imgSS11)#henss1226
+    canvas.create_image(850, 550, image=imgSS11)#02161226
     
     canvas.place(x=100, y=100)
     canvas.pack()
@@ -799,8 +799,8 @@ def kekka_fortune():
     kaimono4(uketori4)
     kaimono5(uketori5)
     
-    mojiZ.pack_forget()#henss1226
-    if chkdel == 1:#henss1226
+    mojiZ.pack_forget()#02161226
+    if chkdel == 1:#02161226
         mojiZ.pack(anchor='n',expand=1)
     
 def kaimono1(uketori):
@@ -808,105 +808,105 @@ def kaimono1(uketori):
     global imgSS121, imgSS122, imgSS123, imgSS124, imgSS125, xi, yi, imgSS101, imgSS102, imgSS103, imgSS104, imgSS105
     
     
-    canvas.create_image(120, 55, image=imgSS97)#henss1223
+    canvas.create_image(120, 55, image=imgSS97)#02161223
     #変更50, 30, image=imgSS97結果画面でのトレーの位置を変更する。
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
-    canvas.create_image(370, 55, image=imgSS97)#henss1223
+    canvas.create_image(370, 55, image=imgSS97)#02161223
     #変更150, 30, image=imgSS97
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
-    canvas.create_image(620, 55, image=imgSS97)#henss1223
+    canvas.create_image(620, 55, image=imgSS97)#02161223
     #変更250, 30, image=imgSS97
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
-    canvas.create_image(870, 55, image=imgSS97)#henss1223    
+    canvas.create_image(870, 55, image=imgSS97)#02161223    
     #変更350, 30, image=imgSS97
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
-    canvas.create_image(1120, 55, image=imgSS97)#henss1223
+    canvas.create_image(1120, 55, image=imgSS97)#02161223
     #変更450, 30, image=imgSS97
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
-    canvas.create_image(120, 180, image=imgSS101)#henss1223
+    canvas.create_image(120, 180, image=imgSS101)#02161223
     #変更50, 180, image=imgSS101 athintの商品画像位置変更
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
-    canvas.create_image(370, 180, image=imgSS102)#henss1223
+    canvas.create_image(370, 180, image=imgSS102)#02161223
     #変更150, 180, image=imgSS102
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
-    canvas.create_image(620, 180, image=imgSS103)#henss1223
+    canvas.create_image(620, 180, image=imgSS103)#02161223
     #変更250, 180, image=imgSS103
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
-    canvas.create_image(870, 180, image=imgSS104)#henss1223
+    canvas.create_image(870, 180, image=imgSS104)#02161223
     #変更350, 180, image=imgSS104
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
-    canvas.create_image(1120, 180, image=imgSS105)#henss1223
+    canvas.create_image(1120, 180, image=imgSS105)#02161223
     #変更450, 180, image=imgSS105
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
     canvas.create_image(120, 300, image=imgSS121)#0128解除
-    #班員変更#henss1223 s0122120, 280, image=imgSS121
+    #hs変更#02161223 s0122120, 280, image=imgSS121
     #変更
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
     #変更
-    canvas.create_image(370, 300, image=imgSS122)#henss1223 s0122
+    canvas.create_image(370, 300, image=imgSS122)#02161223 s0122
     
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
     #変更
-    canvas.create_image(620, 300, image=imgSS123)#henss1223 s0122
+    canvas.create_image(620, 300, image=imgSS123)#02161223 s0122
     
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
     #変更
-    canvas.create_image(870, 300, image=imgSS124)#henss1223 s0122
+    canvas.create_image(870, 300, image=imgSS124)#02161223 s0122
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
     #変更
-    canvas.create_image(1120, 300, image=imgSS125)#henss1223 s0122
+    canvas.create_image(1120, 300, image=imgSS125)#02161223 s0122
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
     
     
-    xi = [70, 140, 190]#henss1223
+    xi = [70, 140, 190]#02161223
     #変更55, 65, 75 x座標のお金の位置を変更 トレーの真ん中へ 起点は紙幣の真ン中
     
-    yi = [35, 45, 55, 65, 75, 85, 95]#henss1223
+    yi = [35, 45, 55, 65, 75, 85, 95]#02161223
     #35, 45, 55, 65, 75, 85, 95
     
     o = 0
@@ -924,10 +924,10 @@ def kaimono1(uketori):
 def kaimono2(uketori):    
     global xi, yi    
     
-    xi = [320, 390, 440]#henss1223
+    xi = [320, 390, 440]#02161223
     #変更155, 165, 175 355, 365, 375
     
-    yi = [35, 45, 55, 65, 75, 85, 95]#henss1223
+    yi = [35, 45, 55, 65, 75, 85, 95]#02161223
     #変更35, 45, 55, 65, 75, 85, 95
     
     o = 0
@@ -943,10 +943,10 @@ def kaimono2(uketori):
 def kaimono3(uketori):    
     global xi, yi    
     
-    xi = [570, 645, 690]#henss1223
+    xi = [570, 645, 690]#02161223
     #変更255, 265, 275
     
-    yi = [35, 45, 55, 65, 75, 85, 95]#henss1223 
+    yi = [35, 45, 55, 65, 75, 85, 95]#02161223 
     
     o = 0
     p = 0
@@ -962,7 +962,7 @@ def kaimono4(uketori):
     global xi, yi    
     
     
-    xi = [820, 890, 940]#henss1223
+    xi = [820, 890, 940]#02161223
     #変更355, 365, 375
     
     yi = [35, 45, 55, 65, 75, 85, 95]    
@@ -980,7 +980,7 @@ def kaimono4(uketori):
 def kaimono5(uketori):    
     global xi, yi, uketori1, uketori2, uketori3, uketori4, uketori5   
     
-    xi = [1040, 1100, 1160]#henss1223
+    xi = [1040, 1100, 1160]#02161223
     #変更455, 465, 475
     
     yi = [35, 45, 55, 65, 75, 85, 95]    
@@ -1042,7 +1042,7 @@ def ning():
     ret4 = ('j', 'k', 'l')
     ret5 = ('m', 'n', 'o')
     count = 0
-    zaq = 0#henss1226
+    zaq = 0#02161226
     
     stbutton.place_forget()
     edbutton.place_forget()
@@ -1067,7 +1067,7 @@ def ning():
     mojiT2.pack_forget()
     mojiT.pack_forget()
     
-    mojiZ.pack_forget()#henss1226
+    mojiZ.pack_forget()#02161226
     
     button.place_forget()
     gm1button.place_forget()
@@ -1092,7 +1092,7 @@ def ning():
     rtbutton.place_forget()
     
     chk.place_forget()
-    chk2.place_forget()#henss1226
+    chk2.place_forget()#02161226
     
     
     imgSS2 = tk.PhotoImage(file = 'imgSS/money_5000.png', master = root)
@@ -1128,21 +1128,21 @@ def ning():
     
     canvas.create_image(250, 300, tag = "open")
     #変更x = 150, y = 550
-    gobutton.place(x = 500, y = 700)#henss1226
+    gobutton.place(x = 500, y = 700)#02161226
     
     mojiC.pack(anchor='n',expand=1)
     mojiCp.pack(anchor='n',expand=1)
     
     
-    canvas.create_image(600, 350, image=imgSS12)#henss
+    canvas.create_image(600, 350, image=imgSS12)#0216
     #変更(280, 200, image=imgSS12) 旅行会社の絵
     
     canvas.place(x=100, y=100)
     canvas.pack()
     
     for us in range(3):
-        ichiA = random.randint(100,1100)#henss
-        ichiB = random.randint(500,670)#henss
+        ichiA = random.randint(100,1100)#0216
+        ichiB = random.randint(500,670)#0216
         canvas.create_image(ichiA, ichiB, image=imgSS14, tags = "irasutoya")
         canvas.place(x=100, y=100)
         canvas.pack()          
@@ -1167,72 +1167,72 @@ def ning():
         hairetsu.append(hid[j])
     for z in range(5):
         for i1 in range(hairetsu[0]):
-            a1 = random.randint(100,1050)#henss
+            a1 = random.randint(100,1050)#0216
         #変更1,400)？
-            b1 = random.randint(500,670)#henss
+            b1 = random.randint(500,670)#0216
         #変更100,500
             canvas.create_image(a1, b1, image=imgSS2, tags = "img2")
             canvas.place(x=100, y=100)
             canvas.pack()  
         for i2 in range(hairetsu[1]):
-            a2 = random.randint(100,1100)#henss
+            a2 = random.randint(100,1100)#0216
     #変更100,400?
-            b2 = random.randint(500,670)#henss
+            b2 = random.randint(500,670)#0216
     #変更100,500?
             canvas.create_image(a2, b2, image=imgSS3, tags = "img4")
             canvas.place(x=100, y=100)
             canvas.pack()
         for i3 in range(hairetsu[2]):
-            a3 = random.randint(300,400)#henss
-            b3 = random.randint(500,670)#henss
+            a3 = random.randint(300,400)#0216
+            b3 = random.randint(500,670)#0216
         #変更100,500?
             canvas.create_image(a3, b3, image=imgSS4, tags = "img6")
             canvas.place(x=100, y=100)
             canvas.pack()  
         for i4 in range(hairetsu[3]):
-            a4 = random.randint(100,1100)#henss
+            a4 = random.randint(100,1100)#0216
     #変更1,400?
-            b4 = random.randint(500,670)#henss
+            b4 = random.randint(500,670)#0216
     #変更100,500?
             canvas.create_image(a4, b4, image=imgSS5, tags = "img8")
             canvas.place(x=100, y=100)
             canvas.pack()
         for i5 in range(hairetsu[4]):
-            a5 = random.randint(100,1100)#henss
+            a5 = random.randint(100,1100)#0216
     #変更1,400?
-            b5 = random.randint(500,670)#henss
+            b5 = random.randint(500,670)#0216
         #変更100,500?
             canvas.create_image(a5, b5, image=imgSS6, tags = "img")
             canvas.place(x=100, y=100)
             canvas.pack()  
         for i6 in range(hairetsu[5]):
-            a6 = random.randint(100,1100)#henss
+            a6 = random.randint(100,1100)#0216
     #変更1,400?
-            b6 = random.randint(500,670)#henss
+            b6 = random.randint(500,670)#0216
     #変更100,500?
             canvas.create_image(a6, b6, image=imgSS7, tags = "img3")
             canvas.place(x=100, y=100)
             canvas.pack()
         for i7 in range(hairetsu[6]):
-            a7 = random.randint(100,1100)#henss
+            a7 = random.randint(100,1100)#0216
     #変更1,400?
-            b7 = random.randint(500,670)#henss
+            b7 = random.randint(500,670)#0216
         #変更100,500?
             canvas.create_image(a7, b7, image=imgSS8, tags = "img5")
             canvas.place(x=100, y=100)
             canvas.pack()  
         for i8 in range(hairetsu[7]):
-            a8 = random.randint(100,1100)#henss
+            a8 = random.randint(100,1100)#0216
     #変更1,400?
-            b8 = random.randint(500,670)#henss
+            b8 = random.randint(500,670)#0216
         #変更1,400?
             canvas.create_image(a8, b8, image=imgSS9, tags = "img7")
             canvas.place(x=100, y=100)
             canvas.pack()
         for i9 in range(hairetsu[8]):
-            a9 = random.randint(100,1100)#henss
+            a9 = random.randint(100,1100)#0216
     #変更1,400?
-            b9 = random.randint(500,670)#henss
+            b9 = random.randint(500,670)#0216
     #変更100,500?
             canvas.create_image(a9, b9, image=imgSS10, tags = "img9")
             canvas.place(x=100, y=100)
@@ -1283,13 +1283,13 @@ def erabing():
     rtbutton.place_forget()
     
     canvas.create_image(250, 300, tag = "open")
-    er1button.place(x = 600, y = 150)#henss
+    er1button.place(x = 600, y = 150)#0216
     #変更x = 180, y = 150
-    er2button.place(x = 600, y = 350)#henss
+    er2button.place(x = 600, y = 350)#0216
     #変更x = 180, y = 250　
-    er3button.place(x = 600, y = 550)#henss
+    er3button.place(x = 600, y = 550)#0216
     #変更x = 180, y = 350　
-    stbutton.place(x = 250, y = 570)#henss
+    stbutton.place(x = 250, y = 570)#0216
     #変更x = 350, y = 570
     
     
@@ -1300,7 +1300,7 @@ def erabing():
     mojiT.tag_configure("g", foreground="#008000")
     mojiT.tag_configure("b", foreground="#0000FF")
     mojiT.tag_configure("t", foreground="#000000")
-    mojiT.insert("end", "　　　　                            円・ ", 'r')#henss
+    mojiT.insert("end", "　　　　                            円・ ", 'r')#0216
     #変更
     mojiT.insert("end", "元・", 'g')
     mojiT.insert("end", "ドン", 'b')
@@ -1312,17 +1312,17 @@ def erabing():
     
     numH = random.randint(1,3)
     if numH == 1:
-        canvas.create_image(625, 300, image=imgSS32)#henss
+        canvas.create_image(625, 300, image=imgSS32)#0216
         #変更x,y=250背景日本
         canvas.place(x=100, y=100)
         canvas.pack()
     elif numH == 2:
-        canvas.create_image(625, 300, image=imgSS33)#henss
+        canvas.create_image(625, 300, image=imgSS33)#0216
         #変更x,y=250背景中国
         canvas.place(x=100, y=100)
         canvas.pack()
     else:
-        canvas.create_image(625, 300, image=imgSS34)#henss
+        canvas.create_image(625, 300, image=imgSS34)#0216
         #変更x,y=250背景ベトナム
         canvas.place(x=100, y=100)
         canvas.pack()       
@@ -1371,9 +1371,9 @@ def opening1():
     canvas.create_image(250, 300, tag = "open")
     
     
-    gm1button.place(x = 580, y = 150)#henss
+    gm1button.place(x = 580, y = 150)#0216
     #変更x = 180, y = 150
-    gm3button.place(x = 580, y = 350)#henss
+    gm3button.place(x = 580, y = 350)#0216
     #変更x = 180, y = 150
     stbutton.place(x = 350, y = 570)
     rtbutton.place(x = 100, y = 570)
@@ -1386,7 +1386,7 @@ def opening1():
     mojiT2.tag_configure("g", foreground="#000000")
     mojiT2.tag_configure("b", foreground="#000000")
     mojiT2.tag_configure("t", foreground="#000000")
-    mojiT2.insert("end", "　                                 『かんたん』", 'r')#henss1218
+    mojiT2.insert("end", "　                                 『かんたん』", 'r')#02161218
     #変更
     mojiT2.insert("end", "から", 'g')
     mojiT2.insert("end", "クリア", 'b')
@@ -1396,7 +1396,7 @@ def opening1():
     mojiT2.configure(state="disabled") # 読取専用に
     mojiT2.pack(anchor='n',expand=1)
     
-    canvas.create_image(800, 550, image=imgSS13)#henss
+    canvas.create_image(800, 550, image=imgSS13)#0216
     #変更250, 250, image=imgSS13
     canvas.place(x=100, y=100)
     canvas.pack()
@@ -1409,13 +1409,13 @@ def opening1():
         gm3button.config(state=tk.DISABLED)
         
     bln.set(False)
-    chk.place(x=400, y=480)#henss
+    chk.place(x=400, y=480)#0216
     #変更chk.place(x=200, y=480)
     
     bln2.set(False)
     if chkdel == 1:
     #     chk2.place(x=200, y=480)
-        chk2.place(x=800, y=480)#henss1226
+        chk2.place(x=800, y=480)#02161226
     
 def opening2():
     
@@ -1443,9 +1443,9 @@ def opening2():
     #canvas.create_rectangle(0, 0, 500, 600, fill = "white", tag = "back")
     canvas.create_image(250, 300, tag = "open")
     
-    gm4button.place(x = 580, y = 150)#henss
+    gm4button.place(x = 580, y = 150)#0216
     #変更x = 180, y = 150
-    gm6button.place(x = 580, y = 350)#henss
+    gm6button.place(x = 580, y = 350)#0216
     #変更x = 180, y = 150
     stbutton.place(x = 350, y = 570)
     rtbutton.place(x = 100, y = 570)
@@ -1456,7 +1456,7 @@ def opening2():
     mojiT2.tag_configure("g", foreground="#000000")
     mojiT2.tag_configure("b", foreground="#000000")
     mojiT2.tag_configure("t", foreground="#000000")
-    mojiT2.insert("end", "　                                 『かんたん』", 'r')#henss1218
+    mojiT2.insert("end", "　                                 『かんたん』", 'r')#02161218
     #変更
     mojiT2.insert("end", "から", 'g')
     mojiT2.insert("end", "クリア", 'b')
@@ -1467,7 +1467,7 @@ def opening2():
     mojiT2.pack(anchor='n',expand=1)
     
     
-    canvas.create_image(800, 550, image=imgSS13)#henss1218
+    canvas.create_image(800, 550, image=imgSS13)#02161218
     #変更250, 250, image=imgSS13, tag = "img"
     canvas.place(x=100, y=100)
     canvas.pack()
@@ -1482,13 +1482,13 @@ def opening2():
         gm6button.config(state=tk.DISABLED)
              
     bln.set(False)
-    chk.place(x=400, y=480)#henss
+    chk.place(x=400, y=480)#0216
     #変更chk.place(x=200, y=480)
     
     bln2.set(False)
-    if chkdel == 1:#henss1226
+    if chkdel == 1:#02161226
     #     chk2.place(x=200, y=480)
-        chk2.place(x=800, y=480)#henss1226
+        chk2.place(x=800, y=480)#02161226
     
     
     imgSS41 = tk.PhotoImage(file = 'imgSS/100元札_ミニ.png', master = root)
@@ -1523,9 +1523,9 @@ def opening3():
     mojiT.pack_forget()
     #canvas.create_rectangle(0, 0, 500, 600, fill = "white", tag = "back")
     canvas.create_image(250, 300, tag = "open")
-    gm7button.place(x = 580, y = 150)#henss1218
+    gm7button.place(x = 580, y = 150)#02161218
     #変更x = 180, y = 150
-    gm9button.place(x = 580, y = 350)#henss1218
+    gm9button.place(x = 580, y = 350)#02161218
     #変更x = 180, y = 350
     stbutton.place(x = 350, y = 570)
     rtbutton.place(x = 100, y = 570)
@@ -1536,7 +1536,7 @@ def opening3():
     mojiT2.tag_configure("g", foreground="#000000")
     mojiT2.tag_configure("b", foreground="#000000")
     mojiT2.tag_configure("t", foreground="#000000")
-    mojiT2.insert("end", "　                                 『かんたん』", 'r')#henss1218
+    mojiT2.insert("end", "　                                 『かんたん』", 'r')#02161218
     #変更
     mojiT2.insert("end", "から", 'g')
     mojiT2.insert("end", "クリア", 'b')
@@ -1546,7 +1546,7 @@ def opening3():
     mojiT2.configure(state="disabled") # 読取専用に
     mojiT2.pack(anchor='n',expand=1)
     
-    canvas.create_image(800, 550, image=imgSS13)#henss1218
+    canvas.create_image(800, 550, image=imgSS13)#02161218
     #変更250, 250, image=imgSS13, tag = "img" 筋トレ女性の絵 tag img は下手につけてはだめ
     canvas.place(x=100, y=100)
     canvas.pack()
@@ -1562,13 +1562,13 @@ def opening3():
     
         
     bln.set(False)
-    chk.place(x=400, y=480)#henss1218
+    chk.place(x=400, y=480)#02161218
     #変更x=200, y=480
     
     bln2.set(False)
     if chkdel == 1:
     #     chk2.place(x=200, y=480)
-        chk2.place(x=800, y=480)#henss1226
+        chk2.place(x=800, y=480)#02161226
     
     
     
@@ -1647,7 +1647,7 @@ def gaming1():
     
     canvas.delete("all")
     
-    canvas.create_image(570, 570, image=imgSS98)#henss1218
+    canvas.create_image(570, 570, image=imgSS98)#02161218
     #変更1000, 1000, image=imgSS98
     canvas.place(x=400, y=400)
     canvas.pack()
@@ -1721,7 +1721,7 @@ def gaming1():
     mouhante = 1
     
     numF = random.randint(1,1000)
-    mojiF = tk.Label(text = "                                                    トレーに"+str(numF)+"円分払って")#henss1218
+    mojiF = tk.Label(text = "                                                    トレーに"+str(numF)+"円分払って")#02161218
     #変更
     # チェックされているか？
     if bln.get():
@@ -2018,7 +2018,7 @@ def gaming3():
    
     
     #自分が追加した箇所        
-    k3button.place(x=1090, y=110)#henss1218
+    k3button.place(x=1090, y=110)#02161218
     k15button.place(x=1090, y=760)
     canvas.create_image(50, 50, image=imgMA)
     canvas.place(x=100, y=100)
@@ -2028,10 +2028,10 @@ def gaming3():
     canvas.place(x=100, y=100)
     canvas.pack()
     
-    canvas.create_image(130, 50, image=imgSS109, tags = "mig")#nagai0125
+    canvas.create_image(130, 50, image=imgSS109, tags = "mig")#02160125
     canvas.place(x=100, y=100)
     canvas.pack()
-    canvas.create_image(290, 50, image=imgSS115, tags = "mig")#nagai0125)
+    canvas.create_image(290, 50, image=imgSS115, tags = "mig")#02160125)
     canvas.place(x=100, y=100)
     canvas.pack()
     canvas.create_image(370, 53, image=imgSS116)
@@ -2199,7 +2199,7 @@ def gaming4():
    
     
     #自分が追加した箇所        
-    k3button.place(x=1090, y=110)#henss1218
+    k3button.place(x=1090, y=110)#02161218
     #変更x=390, y=110
     k15button.place(x=1090, y=760)
     
@@ -2573,7 +2573,7 @@ def gaming6():
    
     
     #自分が追加した箇所        
-    k3button.place(x=1090, y=110)#henss1218
+    k3button.place(x=1090, y=110)#02161218
     #変更x=390, y=110
     k15button.place(x=1090, y=760)
     
@@ -2585,10 +2585,10 @@ def gaming6():
     canvas.place(x=100, y=100)
     canvas.pack()
     
-    canvas.create_image(130, 50, image=imgSS109, tags = "mig")#nagai0125)
+    canvas.create_image(130, 50, image=imgSS109, tags = "mig")#02160125)
     canvas.place(x=100, y=100)
     canvas.pack()
-    canvas.create_image(290, 50, image=imgSS115, tags = "mig")#nagai0125)    
+    canvas.create_image(290, 50, image=imgSS115, tags = "mig")#02160125)    
     canvas.place(x=100, y=100)
     canvas.pack()
     canvas.create_image(370, 53, image=imgSS116)
@@ -2711,7 +2711,7 @@ def gaming7():
    
     
     #自分が追加した箇所        
-    k3button.place(x=1090, y=110)#henss1221
+    k3button.place(x=1090, y=110)#02161221
     #変更x=390, y=110
     k15button.place(x=1090, y=760)    
     
@@ -2793,7 +2793,7 @@ def gaming8():
     mojiTn.pack_forget()
     
     chk.place_forget()
-    chk2.place_forget()#henss1226
+    chk2.place_forget()#02161226
     
     rtbutton.place_forget()
     canvas.delete("all")
@@ -2806,7 +2806,7 @@ def gaming8():
    
     
     #自分が追加した箇所        
-    k3button.place(x=1090, y=110)#henss1221
+    k3button.place(x=1090, y=110)#02161221
     k15button.place(x=1090, y=760)    
     
     for i in range(5):
@@ -3063,7 +3063,7 @@ def gaming9():
     mojiTn.pack_forget()
     
     chk.place_forget()
-    chk2.place_forget()#henss1226
+    chk2.place_forget()#02161226
     
     rtbutton.place_forget()
     canvas.delete("all")
@@ -3073,7 +3073,7 @@ def gaming9():
     mojiF = tk.Label(text = "トレーに"+str(numF)+"ドン分払って")
     
        
-    k3button.place(x=1090, y=110)#henss
+    k3button.place(x=1090, y=110)#0216
     #変更x=390, y=110
     k15button.place(x=1090, y=760)    
     
@@ -3135,7 +3135,7 @@ def ending():
     mojiC.pack_forget()
     canvas.delete("all")
    
-    stbutton.place(x = 550, y = 550)#henss1226
+    stbutton.place(x = 550, y = 550)#02161226
     
     onryop2()
     end1play()
@@ -3179,7 +3179,7 @@ def ending2():
     mojiF.pack_forget()
     mojiC.pack_forget()
     canvas.delete("all")
-    stbutton.place(x = 550, y = 550)#henss1226
+    stbutton.place(x = 550, y = 550)#02161226
     
    
     onryop2()
@@ -3226,7 +3226,7 @@ def ending3():
     mojiF.pack_forget()
     mojiC.pack_forget()
     canvas.delete("all")
-    stbutton.place(x = 550, y = 550)#henss1226
+    stbutton.place(x = 550, y = 550)#02161226
   
     
     onryop2()
@@ -3527,7 +3527,7 @@ canvas.tag_bind("img6", "<ButtonPress-1>", pressed)
 canvas.tag_bind("img7", "<ButtonPress-1>", pressed)
 canvas.tag_bind("img8", "<ButtonPress-1>", pressed)
 canvas.tag_bind("img9", "<ButtonPress-1>", pressed)
-canvas.tag_bind("img1", "<ButtonPress-1>", pressed)#henss1226 de tuketasi
+canvas.tag_bind("img1", "<ButtonPress-1>", pressed)#02161226 de tuketasi
 canvas.tag_bind("irasutoya", "<ButtonPress-1>", pressed)#0206
 canvas.tag_bind("rect", "<B1-Motion>", dragged)
 canvas.tag_bind("img", "<B1-Motion>", dragged)
@@ -3539,8 +3539,8 @@ canvas.tag_bind("img6", "<B1-Motion>", dragged)
 canvas.tag_bind("img7", "<B1-Motion>", dragged)
 canvas.tag_bind("img8", "<B1-Motion>", dragged)
 canvas.tag_bind("img9", "<B1-Motion>", dragged)
-canvas.tag_bind("img1", "<B1-Motion>", dragged)#henss1226 de tuketasi
-canvas.tag_bind("irasutoya", "<B1-Motion>", dragged)#henss1226 de tuketasi
+canvas.tag_bind("img1", "<B1-Motion>", dragged)#02161226 de tuketasi
+canvas.tag_bind("irasutoya", "<B1-Motion>", dragged)#02161226 de tuketasi
 canvas.tag_bind("rect", "<ButtonRelease-1>", dropped)#0204直接追加か
 canvas.tag_bind("img", "<ButtonRelease-1>", dropped)
 canvas.tag_bind("img2", "<ButtonRelease-1>", dropped)
@@ -4052,7 +4052,7 @@ def atohint2(numM):
             imgSS102 = tk.PhotoImage(file = 'imgSS/包丁_gen.png', master = root)       
         else:
             imgSS102 = tk.PhotoImage(file = 'imgSS/syohinken.png', master = root)
-    elif gengo2 == 3:#henss1226
+    elif gengo2 == 3:#02161226
    
         if 0 <= numM < 34:
             imgSS102 = tk.PhotoImage(file = 'imgSS/にんじん_don.png', master = root)
@@ -5023,7 +5023,7 @@ def atohint5(numM):
 def ahint(numM):#0125でだいぶタグ付けたどうなるか    
     global imgSS1, imgSS2, imgSS3, imgSS4, imgSS5, imgSS6, imgSS7, imgSS8, imgSS9, imgSS10, imgSS11, gengo, play5, play4, k3once, existA, hint, tigau, tagX, zahyohn, zahyohn2, zahyohn3, zahyohn4, zahyohn5, stptime, sttime, hayaku, susumu, mojiT, mojiTn, existA, mojiA, numM1, numM2, numM3, numM4, numM5, numF, mojiF, hantei, kekka_fortune, play2, hayaku, imgSS1, imgSS2, imgSS3, imgSS4, imgSS5, imgSS6, imgSS7, imgSS8, imgSS9, imgSS10, imgSS11, gengo, mojiN, mojiT, mojiTn, canvas, ima, mojiT, mojiTn, existA, nojiA, numM1, numM2, numM3, numM4, numM5, numF, mojiF, hantei, kekka_fortune, play2, hayaku, uketori
         
-    canvas.create_image(1050, 500, image=imgSS98)#henss1221
+    canvas.create_image(1050, 500, image=imgSS98)#02161221
     #変更400, 500, image=imgSS98,黒板画像 水平方向184ピクセル　垂直方向130ピクセル
     canvas.place(x=550, y=550)
     canvas.pack()
@@ -5206,7 +5206,7 @@ def ahint(numM):#0125でだいぶタグ付けたどうなるか
         numM1_abc1c2c3c4de1e2e3e4fg1g2g3g4hi1 = numM1_abc1c2c3c4de1e2e3e4fg1g2g3g4h - 1
         canvas.create_image(1080, 500, image=imgSS49, tags = "mig")#tagudemotukeruka0125)
         #変更480, 500, image=imgSS49　元はない
-        canvas.place(x=100, y=100)#henss1221
+        canvas.place(x=100, y=100)#02161221
         #変更x=570, y=585
         canvas.pack()
     else:
@@ -5216,7 +5216,7 @@ def ahint(numM):#0125でだいぶタグ付けたどうなるか
         numM1_abc1c2c3c4de1e2e3e4fg1g2g3g4hi1i2 = numM1_abc1c2c3c4de1e2e3e4fg1g2g3g4hi1 - 1
         canvas.create_image(1080, 520, image=imgSS49, tags = "mig")#tagudemotukeruka0125)
         #変更480, 520, image=imgSS49
-        canvas.place(x=100, y=100)#henss1221
+        canvas.place(x=100, y=100)#02161221
         #変更x=570, y=590
         canvas.pack()
     else:
@@ -5226,7 +5226,7 @@ def ahint(numM):#0125でだいぶタグ付けたどうなるか
         numM1_abc1c2c3c4de1e2e3e4fg1g2g3g4hi1i2i3 = numM1_abc1c2c3c4de1e2e3e4fg1g2g3g4hi1i2 - 1
         canvas.create_image(1080, 540, image=imgSS49, tags = "mig")#tagudemotukeruka0125)
         #変更480, 540, image=imgSS49
-        canvas.place(x=100, y=100)#henss1221
+        canvas.place(x=100, y=100)#02161221
         #変更x=570, y=595
         canvas.pack()
     else:
@@ -5236,7 +5236,7 @@ def ahint(numM):#0125でだいぶタグ付けたどうなるか
         numM1_abc1c2c3c4de1e2e3e4fg1g2g3g4hi1i2i3i4 = numM1_abc1c2c3c4de1e2e3e4fg1g2g3g4hi1i2i3 - 1
         canvas.create_image(1080, 560, image=imgSS49, tags = "mig")#tagudemotukeruka0125)
         #変更480, 560, image=imgSS49
-        canvas.place(x=100, y=100)#henss1221
+        canvas.place(x=100, y=100)#02161221
         #変更x=570, y=600
         canvas.pack()
     else:
@@ -5379,7 +5379,7 @@ class Timer:
         self.label["font"] = ("Helvetica", 32)
         self.label["bg"] = "#32CD30"
         self.label["fg"] = "white"
-        self.label.place(x = 5, y = 105)#henss1221
+        self.label.place(x = 5, y = 105)#02161221
             
         self.label2 = tk.Label(self.root)
         self.label2["font"] = ("Helvetica", 32)
@@ -5417,8 +5417,8 @@ class Timer:
                     kekka_fortune()
                 #変更x = 2, y = 543 のこり
                 #さらに変更x = 2, y = 543 のこり
-                self.label2.place(x = 900, y = 80)#henss1226
-                self.label3.place(x = 928, y = 135)#henss1226
+                self.label2.place(x = 900, y = 80)#02161226
+                self.label3.place(x = 928, y = 135)#02161226
                 realK3()#0125deike
                 #0128 kokodakedemoiika madakijo↓
                 self.labelR.place(x = 600, y = 5)#sikatanai0125
@@ -5429,10 +5429,10 @@ class Timer:
                 self.label3["bg"] = "#32CD30"
                 self.label3["fg"] = "white"
                 
-                self.labelR["bg"] = "#32CD30"#moumurida0125
+                self.labelR["bg"] = "#32CD30"#02160125
                 self.labelR["fg"] = "black"#0128madamikaijo
-                self.label.place(x = 900, y = 135)#henss1226
-                self.label3.lower()#henss1226
+                self.label.place(x = 900, y = 135)#02161226
+                self.label3.lower()#02161226
         
                 #0128madamikaijo
                 self.labelR.lower()#geyadondebmadabaguru0125
@@ -5484,7 +5484,7 @@ class Timer:
                     tagX = []
                     anahint(numM1)
                     if tigau == 1:
-                        tgbutton.place(x = 130, y = 210)#henss1225
+                        tgbutton.place(x = 130, y = 210)#02161225
     #                     hint = 1
                     else:
                         tgbutton.place_forget()
@@ -5619,7 +5619,7 @@ class Timer:
                         tagX = []
                         ahint(numM1)
                         if tigau == 1:
-                            tgbutton.place(x = 130, y = 210)#henss1225
+                            tgbutton.place(x = 130, y = 210)#02161225
                         else:
                             tgbutton.place_forget()
      
@@ -5628,7 +5628,7 @@ class Timer:
                     mojiTg.pack_forget()
                 
                     if gengo == 2:
-                        mojiTg = tk.Text(height=1, width=62, wrap="none")#henss1221
+                        mojiTg = tk.Text(height=1, width=62, wrap="none")#02161221
                         #変更width=25 白のテキスト変更
         
                         mojiTg.tag_configure("f", foreground="#FF0100")
@@ -5636,14 +5636,14 @@ class Timer:
                         mojiTg.tag_configure("g", foreground="#FF0000")
                         mojiTg.tag_configure("b", foreground="#000000")
     #                     mojiTn.insert("end", "次‼", 'f')
-                        mojiTg.insert("end","　　　　　　　　　　　トレーに", 'r')#henss1221
+                        mojiTg.insert("end","　　　　　　　　　　　トレーに", 'r')#02161221
             #変更半角スペースあける
                         mojiTg.insert("end", str(numM1/100), 'g')
-                        mojiTg.insert("end", "元ピッタリはらって!", 'b')#henss1226
+                        mojiTg.insert("end", "元ピッタリはらって!", 'b')#02161226
                         mojiTg.configure(state="disabled") # 読取専用に
                         mojiTg.pack(anchor='n',expand=1)
                     elif gengo == 3:
-                        mojiTd = tk.Text(height=1, width=62, wrap="none")#henss1221
+                        mojiTd = tk.Text(height=1, width=62, wrap="none")#02161221
                         #変更width=25
         
                         mojiTd.tag_configure("f", foreground="#FF0100")
@@ -5651,14 +5651,14 @@ class Timer:
                         mojiTd.tag_configure("g", foreground="#FF0000")
                         mojiTd.tag_configure("b", foreground="#000000")
     #                     mojiTn.insert("end", "次‼", 'f')
-                        mojiTd.insert("end","　　　　　　　　　　　トレーに", 'r')#henss1221
+                        mojiTd.insert("end","　　　　　　　　　　　トレーに", 'r')#02161221
             #変更半角スペースあける
                         mojiTd.insert("end", str(numM1*100), 'g')
                         mojiTd.insert("end", "ドンピッタリはらって!", 'b')
                         mojiTd.configure(state="disabled") # 読取専用に
                         mojiTd.pack(anchor='n',expand=1)
                     elif gengo == 1:                        
-                        mojiTn = tk.Text(height=1, width=62, wrap="none")#henss1221
+                        mojiTn = tk.Text(height=1, width=62, wrap="none")#02161221
                         #変更width=25
         
                         mojiTn.tag_configure("f", foreground="#FF0100")
@@ -5666,38 +5666,38 @@ class Timer:
                         mojiTn.tag_configure("g", foreground="#FF0000")
                         mojiTn.tag_configure("b", foreground="#000000")
     #                     mojiTn.insert("end", "次‼", 'f')
-                        mojiTn.insert("end","　　　　　　　　　　　トレーに", 'r')#henss1221
+                        mojiTn.insert("end","　　　　　　　　　　　トレーに", 'r')#02161221
             #変更半角スペースあける
                         mojiTn.insert("end", str(numM1), 'g')
                         mojiTn.insert("end", "円ピッタリはらって!", 'b')
                         mojiTn.configure(state="disabled") # 読取専用に
                         mojiTn.pack(anchor='n',expand=1)
                     else:
-                        emojiTn = tk.Text(height=1, width=62, wrap="none")#henss1223
+                        emojiTn = tk.Text(height=1, width=62, wrap="none")#02161223
                         emojiTn.tag_configure("r", foreground="#000000")
                         emojiTn.tag_configure("g", foreground="#FF0000")
                         emojiTn.tag_configure("b", foreground="#000000")
-                        emojiTn.insert("end", "　　　　　　　　　　　　2つの商品の", 'r')#henss1223
+                        emojiTn.insert("end", "　　　　　　　　　　　　2つの商品の", 'r')#02161223
                         
                         emojiTn.insert("end", "合計額を", 'g')
                         emojiTn.insert("end", "ピッタリはらって!", 'b')
                         emojiTn.configure(state="disabled")
                         emojiTn.pack(anchor='n',expand=1)
                         
-                        canvas.create_image(50, 50, image=imgMA)#henss1225
-        #50, 165, image=imgMA#班員
+                        canvas.create_image(50, 50, image=imgMA)#02161225
+        #50, 165, image=imgMA#hs
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        canvas.create_image(210, 50, image=imgMB)#henss1225
-        #210, 165, image=imgMB#班員
+                        canvas.create_image(210, 50, image=imgMB)#02161225
+        #210, 165, image=imgMB#hs
                         canvas.place(x=100, y=100)
                         canvas.pack()
             
             
-                        canvas.create_image(130, 50, image=imgSS109, tags = "mig")#nagai0125)
+                        canvas.create_image(130, 50, image=imgSS109, tags = "mig")#02160125)
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        canvas.create_image(290, 50, image=imgSS115, tags = "mig")#nagai0125)
+                        canvas.create_image(290, 50, image=imgSS115, tags = "mig")#02160125)
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         canvas.create_image(370, 60, image=imgSS116)
@@ -5997,59 +5997,59 @@ class Timer:
                         canvas.place(x=100, y=100)
                         canvas.pack()
                     
-                    if zaq == 1:#henss1226 tamesini zaqzaq mode 1set
+                    if zaq == 1:#02161226 tamesini zaqzaq mode 1set
     
-                        a100d = random.randint(1,700)#henss1221#班員 1,1100
-                        b100d = random.randint(200,600)#henss1221#班員 100,600
+                        a100d = random.randint(1,700)#02161221#hs 1,1100
+                        b100d = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a100d, b100d, image=imgSS94, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        a50d = random.randint(1,700)#henss1221#班員 1,1100
-                        b50d = random.randint(200,600)#henss1221#班員 100,600
+                        a50d = random.randint(1,700)#02161221#hs 1,1100
+                        b50d = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a50d, b50d, image=imgSS93, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a10d = random.randint(1,700)#henss1221#班員 1,1100
-                            b10d = random.randint(200,600)#henss1221#班員 100,600
+                            a10d = random.randint(1,700)#02161221#hs 1,1100
+                            b10d = random.randint(200,600)#02161221#hs 100,600
                             canvas.create_image(a10d, b10d, image=imgSS92, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                        a5d = random.randint(1,700)#henss1221#班員 1,1100
-                        b5d = random.randint(200,600)#henss1221#班員 100,600
+                        a5d = random.randint(1,700)#02161221#hs 1,1100
+                        b5d = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a5d, b5d, image=imgSS91, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a1d = random.randint(1,700)#henss1221#班員 1,1100
-                            b1d = random.randint(200,600)#henss1221#班員 100,600
+                            a1d = random.randint(1,700)#02161221#hs 1,1100
+                            b1d = random.randint(200,600)#02161221#hs 100,600
                             canvas.create_image(a1d, b1d, image=imgSS90, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                        a50c = random.randint(1,700)#henss1221#班員 1,1100
-                        b50c = random.randint(200,600)#henss1221#班員 100,600
+                        a50c = random.randint(1,700)#02161221#hs 1,1100
+                        b50c = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a50c, b50c, image=imgSS89, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a10c = random.randint(1,700)#henss1221#班員 1,1100
-                            b10c = random.randint(200,600)#henss1221#班員100,600
+                            a10c = random.randint(1,700)#02161221#hs 1,1100
+                            b10c = random.randint(200,600)#02161221#hs100,600
                             canvas.create_image(a10c, b10c, image=imgSS88, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                        a5c = random.randint(1,700)#henss1221#班員 1,1100
-                        b5c = random.randint(200,600)#henss1221#班員100,600
+                        a5c = random.randint(1,700)#02161221#hs 1,1100
+                        b5c = random.randint(200,600)#02161221#hs100,600
                         canvas.create_image(a5c, b5c, image=imgSS87, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a1c = random.randint(1,700)#henss1221#班員 1,1100
-                            b1c = random.randint(200,600)#henss1221#班員100,600
+                            a1c = random.randint(1,700)#02161221#hs 1,1100
+                            b1c = random.randint(200,600)#02161221#hs100,600
                             canvas.create_image(a1c, b1c, image=imgSS86, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
                            
-                        zm1button.place(x=860, y=100)#henss1221
+                        zm1button.place(x=860, y=100)#02161221
                         
                     
                     existA = 10
@@ -6086,18 +6086,18 @@ class Timer:
                     if zahyohn2 == 1:
                         hnbutton['text'] = "Q1正解"  
                         
-                        hnbutton.place(x = 5, y = 250)#henss1226
+                        hnbutton.place(x = 5, y = 250)#02161226
                         play5()
                         
-                        canvas.create_image(630, 300, image=imgSS106)#henss1225
-                    #250, 300, image=imgSS106#班員
+                        canvas.create_image(630, 300, image=imgSS106)#02161225
+                    #250, 300, image=imgSS106#hs
                         canvas.place(x=250, y=300)
                         canvas.pack()
                         
                     elif zahyohn2 == 2:
                         existA = 100000
                         
-                        canvas.create_image(630, 300, image=imgSS107)#henss1225
+                        canvas.create_image(630, 300, image=imgSS107)#02161225
             #250, 300, image=imgSS107
                         canvas.place(x=250, y=300)
                         canvas.pack()
@@ -6121,7 +6121,7 @@ class Timer:
                         ahint(numM2)
                         
                         if tigau == 1:
-                            tgbutton.place(x = 130, y = 210)#henss1225
+                            tgbutton.place(x = 130, y = 210)#02161225
         #x = 5, y = 210
                         else:
                             tgbutton.place_forget()
@@ -6132,83 +6132,83 @@ class Timer:
                     emojiTn.pack_forget()
                     
                     if gengo == 2:
-                        mojiTg = tk.Text(height=1, width=62, wrap="none")#henss1222
+                        mojiTg = tk.Text(height=1, width=62, wrap="none")#02161222
                 #変更width=25
                         mojiTg.tag_configure("f", foreground="#FF0100")
                         mojiTg.tag_configure("r", foreground="#000000")
                         mojiTg.tag_configure("g", foreground="#FF0000")
                         mojiTg.tag_configure("b", foreground="#000000")
     #                     mojiTn.insert("end", "次‼", 'f')
-                        mojiTg.insert("end","　　　　　　　　　　　トレーに", 'r')#henss1222
+                        mojiTg.insert("end","　　　　　　　　　　　トレーに", 'r')#02161222
             #変更半角スペース開ける
                         mojiTg.insert("end", str(numM2/100), 'g')
                         mojiTg.insert("end", "元ピッタリはらって!", 'b')
                         mojiTg.configure(state="disabled") # 読取専用に
                         mojiTg.pack(anchor='n',expand=1)
                     elif gengo == 3:
-                        mojiTd = tk.Text(height=1, width=62, wrap="none")#henss1222
+                        mojiTd = tk.Text(height=1, width=62, wrap="none")#02161222
                         #変更width=25
                         mojiTd.tag_configure("f", foreground="#FF0100")
                         mojiTd.tag_configure("r", foreground="#000000")
                         mojiTd.tag_configure("g", foreground="#FF0000")
                         mojiTd.tag_configure("b", foreground="#000000")
     #                     mojiTn.insert("end", "次‼", 'f')
-                        mojiTd.insert("end","　　　　　　　　　　　トレーに", 'r')#henss1222
+                        mojiTd.insert("end","　　　　　　　　　　　トレーに", 'r')#02161222
             #変更半角スペース開ける
                         mojiTd.insert("end", str(numM2*100), 'g')
                         mojiTd.insert("end", "ドンピッタリはらって!", 'b')
                         mojiTd.configure(state="disabled") # 読取専用に
                         mojiTd.pack(anchor='n',expand=1)
                     elif gengo == 1:                        
-                        mojiTn = tk.Text(height=1, width=62, wrap="none")#henss1222
+                        mojiTn = tk.Text(height=1, width=62, wrap="none")#02161222
                         #変更width=25
                         mojiTn.tag_configure("f", foreground="#FF0100")
                         mojiTn.tag_configure("r", foreground="#000000")
                         mojiTn.tag_configure("g", foreground="#FF0000")
                         mojiTn.tag_configure("b", foreground="#000000")
     #                     mojiTn.insert("end", "次‼", 'f')
-                        mojiTn.insert("end","　　　　　　　　　　　トレーに", 'r')#henss1222
+                        mojiTn.insert("end","　　　　　　　　　　　トレーに", 'r')#02161222
             #変更半角スペース開ける
                         mojiTn.insert("end", str(numM2), 'g')
                         mojiTn.insert("end", "円ピッタリはらって!", 'b')
                         mojiTn.configure(state="disabled") # 読取専用に
                         mojiTn.pack(anchor='n',expand=1)
                     else:
-                        emojiTn = tk.Text(height=1, width=62, wrap="none")#henss1223
+                        emojiTn = tk.Text(height=1, width=62, wrap="none")#02161223
                         emojiTn.tag_configure("r", foreground="#000000")
                         emojiTn.tag_configure("g", foreground="#FF0000")
                         emojiTn.tag_configure("b", foreground="#000000")
-                        emojiTn.insert("end", "　　　　　　　　　　　　2つの商品の", 'r')#henss1223
+                        emojiTn.insert("end", "　　　　　　　　　　　　2つの商品の", 'r')#02161223
     
                         emojiTn.insert("end", "合計額を", 'g')
                         emojiTn.insert("end", "ピッタリはらって!", 'b')
                         emojiTn.configure(state="disabled")
                         emojiTn.pack(anchor='n',expand=1)
                         
-                        canvas.create_image(50, 50, image=imgMC)#henss1225
+                        canvas.create_image(50, 50, image=imgMC)#02161225
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        canvas.create_image(210, 50, image=imgMD)#henss1225
+                        canvas.create_image(210, 50, image=imgMD)#02161225
         #商品210, 165, image=imgMD#
                         canvas.place(x=100, y=100)
                         canvas.pack()
             
             
-                        canvas.create_image(130, 50, image=imgSS109, tags = "mig")#nagai0125)
+                        canvas.create_image(130, 50, image=imgSS109, tags = "mig")#02160125)
         #130, 165, image=imgSS109 +
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        canvas.create_image(290, 50, image=imgSS115, tags = "mig")#nagai0125)
+                        canvas.create_image(290, 50, image=imgSS115, tags = "mig")#02160125)
                         #290, 165, image=imgSS115 =
                         canvas.place(x=100, y=100)
                         canvas.pack()
                 
-                        canvas.create_image(370, 60, image=imgSS116)#henss1225
+                        canvas.create_image(370, 60, image=imgSS116)#02161225
                         #370, 165, image=imgSS116 ?
                         canvas.place(x=100, y=100)
                         canvas.pack()                                                
                         
-                    canvas.create_image(650, 100, image=imgSS96)#henss1222
+                    canvas.create_image(650, 100, image=imgSS96)#02161222
                 #変更250,50
                     canvas.place(x=150, y=150)
                     canvas.pack()
@@ -6462,7 +6462,7 @@ class Timer:
                         canvas.place(x=100, y=100)
                         canvas.pack()
                     
-                    for iii in range(1):#henss1226
+                    for iii in range(1):#02161226
         
     #                     a1man = random.randint(1,400)
                 #変更(1,400)
@@ -6483,60 +6483,60 @@ class Timer:
                         canvas.create_image(a5en, b5en, image=imgSS5, tags = "img8")
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                    if zaq == 1:#henss1226 tamesini zaqzaq mode 1set
+                    if zaq == 1:#02161226 tamesini zaqzaq mode 1set
     
-                        a100d = random.randint(1,700)#henss1221#班員 1,1100
-                        b100d = random.randint(200,600)#henss1221#班員 100,600
+                        a100d = random.randint(1,700)#02161221#hs 1,1100
+                        b100d = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a100d, b100d, image=imgSS94, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        a50d = random.randint(1,700)#henss1221#班員 1,1100
-                        b50d = random.randint(200,600)#henss1221#班員 100,600
+                        a50d = random.randint(1,700)#02161221#hs 1,1100
+                        b50d = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a50d, b50d, image=imgSS93, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a10d = random.randint(1,700)#henss1221#班員 1,1100
-                            b10d = random.randint(200,600)#henss1221#班員 100,600
+                            a10d = random.randint(1,700)#02161221#hs 1,1100
+                            b10d = random.randint(200,600)#02161221#hs 100,600
                             canvas.create_image(a10d, b10d, image=imgSS92, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                        a5d = random.randint(1,700)#henss1221#班員 1,1100
-                        b5d = random.randint(200,600)#henss1221#班員 100,600
+                        a5d = random.randint(1,700)#02161221#hs 1,1100
+                        b5d = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a5d, b5d, image=imgSS91, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a1d = random.randint(1,700)#henss1221#班員 1,1100
-                            b1d = random.randint(200,600)#henss1221#班員 100,600
+                            a1d = random.randint(1,700)#02161221#hs 1,1100
+                            b1d = random.randint(200,600)#02161221#hs 100,600
                             canvas.create_image(a1d, b1d, image=imgSS90, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                        a50c = random.randint(1,700)#henss1221#班員 1,1100
-                        b50c = random.randint(200,600)#henss1221#班員 100,600
+                        a50c = random.randint(1,700)#02161221#hs 1,1100
+                        b50c = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a50c, b50c, image=imgSS89, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a10c = random.randint(1,700)#henss1221#班員 1,1100
-                            b10c = random.randint(200,600)#henss1221#班員100,600
+                            a10c = random.randint(1,700)#02161221#hs 1,1100
+                            b10c = random.randint(200,600)#02161221#hs100,600
                             canvas.create_image(a10c, b10c, image=imgSS88, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                        a5c = random.randint(1,700)#henss1221#班員 1,1100
-                        b5c = random.randint(200,600)#henss1221#班員100,600
+                        a5c = random.randint(1,700)#02161221#hs 1,1100
+                        b5c = random.randint(200,600)#02161221#hs100,600
                         canvas.create_image(a5c, b5c, image=imgSS87, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a1c = random.randint(1,700)#henss1221#班員 1,1100
-                            b1c = random.randint(200,600)#henss1221#班員100,600
+                            a1c = random.randint(1,700)#02161221#hs 1,1100
+                            b1c = random.randint(200,600)#02161221#hs100,600
                             canvas.create_image(a1c, b1c, image=imgSS86, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
                     
                     
-                    zm2button.place(x=860, y=100)#henss1222
+                    zm2button.place(x=860, y=100)#02161222
                     
                     existA = 100
                 elif existA == 100000:
@@ -6553,7 +6553,7 @@ class Timer:
                     tagX = []
                     anahint(numM3)
                     if tigau == 1:
-                        tgbutton.place(x = 130, y = 210)#henss1225
+                        tgbutton.place(x = 130, y = 210)#02161225
     #                     hint = 1
                     else:
                         tgbutton.place_forget()
@@ -6570,10 +6570,10 @@ class Timer:
                     
                     if zahyohn3 == 1:
                         hnbutton['text'] = "Q2正解"
-                        hnbutton.place(x = 5, y = 250)#henss1226
+                        hnbutton.place(x = 5, y = 250)#02161226
                         play()
                         
-                        canvas.create_image(630, 300, image=imgSS106)#henss1225
+                        canvas.create_image(630, 300, image=imgSS106)#02161225
                     #250, 300, image=imgSS106
         
                         canvas.place(x=250, y=300)
@@ -6583,14 +6583,14 @@ class Timer:
                         existA = 100000
                         
                         
-                        canvas.create_image(630, 300, image=imgSS107)#henss1225
+                        canvas.create_image(630, 300, image=imgSS107)#02161225
                 #250, 300, image=imgSS107
                         canvas.place(x=250, y=300)
                         canvas.pack()
                         
                     else:
     
-                        canvas.create_image(630, 300, image=imgSS108)#henss1225
+                        canvas.create_image(630, 300, image=imgSS108)#02161225
             #250, 300, image=imgSS108#
                         canvas.place(x=250, y=300)
                         canvas.pack()
@@ -6605,7 +6605,7 @@ class Timer:
                         ahint(numM3)
                         
                         if tigau == 1:
-                            tgbutton.place(x = 130, y = 210)#henss1225
+                            tgbutton.place(x = 130, y = 210)#02161225
         #x = 5, y = 210
                         else:
                             tgbutton.place_forget()
@@ -6617,83 +6617,83 @@ class Timer:
                 
                     
                     if gengo == 2:
-                        mojiTg = tk.Text(height=1, width=62, wrap="none")#henss1222
+                        mojiTg = tk.Text(height=1, width=62, wrap="none")#02161222
                     #変更width=25
                         mojiTg.tag_configure("f", foreground="#FF0100")
                         mojiTg.tag_configure("r", foreground="#000000")
                         mojiTg.tag_configure("g", foreground="#FF0000")
                         mojiTg.tag_configure("b", foreground="#000000")
     #                     mojiTn.insert("end", "次‼", 'f')
-                        mojiTg.insert("end", "                               トレーに", 'r')#henss1222
+                        mojiTg.insert("end", "                               トレーに", 'r')#02161222
             #変更半角スペース開ける
                         mojiTg.insert("end", str(numM3/100), 'g')
                         mojiTg.insert("end", "元ピッタリはらって!", 'b')
                         mojiTg.configure(state="disabled") # 読取専用に
                         mojiTg.pack(anchor='n',expand=1)
                     elif gengo == 3:
-                        mojiTd = tk.Text(height=1, width=62, wrap="none")#henss1222
+                        mojiTd = tk.Text(height=1, width=62, wrap="none")#02161222
                         #変更
                         mojiTd.tag_configure("f", foreground="#FF0100")
                         mojiTd.tag_configure("r", foreground="#000000")
                         mojiTd.tag_configure("g", foreground="#FF0000")
                         mojiTd.tag_configure("b", foreground="#000000")
     #                     mojiTn.insert("end", "次‼", 'f')
-                        mojiTd.insert("end", "　　　　　　　　　　トレーに", 'r')#henss1222
+                        mojiTd.insert("end", "　　　　　　　　　　トレーに", 'r')#02161222
             #変更半角スペース開ける
                         mojiTd.insert("end", str(numM3*100), 'g')
                         mojiTd.insert("end", "ドンピッタリはらって!", 'b')
                         mojiTd.configure(state="disabled") # 読取専用に
                         mojiTd.pack(anchor='n',expand=1)
                     elif gengo == 1:                        
-                        mojiTn = tk.Text(height=1, width=62, wrap="none")#henss1222
+                        mojiTn = tk.Text(height=1, width=62, wrap="none")#02161222
                         #変更
                         mojiTn.tag_configure("f", foreground="#FF0100")
                         mojiTn.tag_configure("r", foreground="#000000")
                         mojiTn.tag_configure("g", foreground="#FF0000")
                         mojiTn.tag_configure("b", foreground="#000000")
     #                     mojiTn.insert("end", "次‼", 'f')
-                        mojiTn.insert("end","　　　　　　　　　　　トレーに", 'r')#henss1221
+                        mojiTn.insert("end","　　　　　　　　　　　トレーに", 'r')#02161221
             #変更半角スペース開ける
                         mojiTn.insert("end", str(numM3), 'g')
                         mojiTn.insert("end", "円ピッタリはらって!", 'b')
                         mojiTn.configure(state="disabled") # 読取専用に
                         mojiTn.pack(anchor='n',expand=1)
                     else:
-                        emojiTn = tk.Text(height=1, width=62, wrap="none")#henss1223
+                        emojiTn = tk.Text(height=1, width=62, wrap="none")#02161223
                         emojiTn.tag_configure("r", foreground="#000000")
                         emojiTn.tag_configure("g", foreground="#FF0000")
                         emojiTn.tag_configure("b", foreground="#000000")
-                        emojiTn.insert("end", "　　　　　　　　　　　　2つの商品の", 'r')#henss1223
+                        emojiTn.insert("end", "　　　　　　　　　　　　2つの商品の", 'r')#02161223
     
                         emojiTn.insert("end", "合計額を", 'g')
                         emojiTn.insert("end", "ピッタリはらって!", 'b')
                         emojiTn.configure(state="disabled")
                         emojiTn.pack(anchor='n',expand=1)
                         
-                        canvas.create_image(50, 50, image=imgME)#henss1225
+                        canvas.create_image(50, 50, image=imgME)#02161225
         #50, 165, image=imgME#
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        canvas.create_image(210, 50, image=imgMF)#henss1225
+                        canvas.create_image(210, 50, image=imgMF)#02161225
         #210, 165, image=imgMF
                         canvas.place(x=100, y=100)
                         canvas.pack()
             
             
-                        canvas.create_image(130, 50, image=imgSS109, tags = "mig")#nagai0125)
+                        canvas.create_image(130, 50, image=imgSS109, tags = "mig")#02160125)
         
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         #290, 165, image=imgSS115
-                        canvas.create_image(290, 50, image=imgSS115, tags = "mig")#nagai0125)
+                        canvas.create_image(290, 50, image=imgSS115, tags = "mig")#02160125)
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        canvas.create_image(370, 60, image=imgSS116)#henss1225
+                        canvas.create_image(370, 60, image=imgSS116)#02161225
                         #370, 165, image=imgSS116#
                         canvas.place(x=100, y=100)
                         canvas.pack()                                                
             
-                    canvas.create_image(650, 100, image=imgSS96)#henss1222
+                    canvas.create_image(650, 100, image=imgSS96)#02161222
                     #変更250
                     canvas.place(x=150, y=150)
                     canvas.pack()
@@ -6947,7 +6947,7 @@ class Timer:
                         canvas.place(x=100, y=100)
                         canvas.pack()
     
-                    for iv in range(1):#henss1226
+                    for iv in range(1):#02161226
                         canvas.create_image(a1man, b1man, image=imgSS6, tags = "img")
                         canvas.place(x=100, y=100)
                         canvas.pack()
@@ -6963,59 +6963,59 @@ class Timer:
                         canvas.create_image(a5en, b5en, image=imgSS5, tags = "img8")
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                    if zaq == 1:#henss1226 tamesini zaqzaq mode 1set
+                    if zaq == 1:#02161226 tamesini zaqzaq mode 1set
     
-                        a100d = random.randint(1,700)#henss1221#班員 1,1100
-                        b100d = random.randint(200,600)#henss1221#班員 100,600
+                        a100d = random.randint(1,700)#02161221#hs 1,1100
+                        b100d = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a100d, b100d, image=imgSS94, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        a50d = random.randint(1,700)#henss1221#班員 1,1100
-                        b50d = random.randint(200,600)#henss1221#班員 100,600
+                        a50d = random.randint(1,700)#02161221#hs 1,1100
+                        b50d = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a50d, b50d, image=imgSS93, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a10d = random.randint(1,700)#henss1221#班員 1,1100
-                            b10d = random.randint(200,600)#henss1221#班員 100,600
+                            a10d = random.randint(1,700)#02161221#hs 1,1100
+                            b10d = random.randint(200,600)#02161221#hs 100,600
                             canvas.create_image(a10d, b10d, image=imgSS92, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                        a5d = random.randint(1,700)#henss1221#班員 1,1100
-                        b5d = random.randint(200,600)#henss1221#班員 100,600
+                        a5d = random.randint(1,700)#02161221#hs 1,1100
+                        b5d = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a5d, b5d, image=imgSS91, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a1d = random.randint(1,700)#henss1221#班員 1,1100
-                            b1d = random.randint(200,600)#henss1221#班員 100,600
+                            a1d = random.randint(1,700)#02161221#hs 1,1100
+                            b1d = random.randint(200,600)#02161221#hs 100,600
                             canvas.create_image(a1d, b1d, image=imgSS90, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                        a50c = random.randint(1,700)#henss1221#班員 1,1100
-                        b50c = random.randint(200,600)#henss1221#班員 100,600
+                        a50c = random.randint(1,700)#02161221#hs 1,1100
+                        b50c = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a50c, b50c, image=imgSS89, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a10c = random.randint(1,700)#henss1221#班員 1,1100
-                            b10c = random.randint(200,600)#henss1221#班員100,600
+                            a10c = random.randint(1,700)#02161221#hs 1,1100
+                            b10c = random.randint(200,600)#02161221#hs100,600
                             canvas.create_image(a10c, b10c, image=imgSS88, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                        a5c = random.randint(1,700)#henss1221#班員 1,1100
-                        b5c = random.randint(200,600)#henss1221#班員100,600
+                        a5c = random.randint(1,700)#02161221#hs 1,1100
+                        b5c = random.randint(200,600)#02161221#hs100,600
                         canvas.create_image(a5c, b5c, image=imgSS87, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a1c = random.randint(1,700)#henss1221#班員 1,1100
-                            b1c = random.randint(200,600)#henss1221#班員100,600
+                            a1c = random.randint(1,700)#02161221#hs 1,1100
+                            b1c = random.randint(200,600)#02161221#hs100,600
                             canvas.create_image(a1c, b1c, image=imgSS86, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
                                         
-                    zm3button.place(x=860, y=100)#henss1222
+                    zm3button.place(x=860, y=100)#02161222
                     
                     existA = 1000
                 elif existA == 100000:
@@ -7033,7 +7033,7 @@ class Timer:
                     tagX = []
                     anahint(numM4)
                     if tigau == 1:
-                        tgbutton.place(x = 130, y = 210)#henss1225
+                        tgbutton.place(x = 130, y = 210)#02161225
         
     #                     hint = 1
                     else:
@@ -7051,10 +7051,10 @@ class Timer:
                     
                     if zahyohn4 == 1:
                         hnbutton['text'] = "Q3正解"
-                        hnbutton.place(x = 5, y = 250)#henss1226
+                        hnbutton.place(x = 5, y = 250)#02161226
                         play5()
                         
-                        canvas.create_image(630, 300, image=imgSS106)#henss1225
+                        canvas.create_image(630, 300, image=imgSS106)#02161225
                     #250, 300, image=imgSS106
                         canvas.place(x=250, y=300)
                         canvas.pack()
@@ -7062,14 +7062,14 @@ class Timer:
                     elif zahyohn4 == 2:
                         existA = 100000
                         
-                        canvas.create_image(630, 300, image=imgSS107)#henss1225
+                        canvas.create_image(630, 300, image=imgSS107)#02161225
             #250, 300, image=imgSS107
                         canvas.place(x=250, y=300)
                         canvas.pack()                        
                         
                     else:
                 
-                        canvas.create_image(630, 300, image=imgSS108)#henss1225
+                        canvas.create_image(630, 300, image=imgSS108)#02161225
                 #250, 300, image=imgSS108
                         canvas.place(x=250, y=300)
                         canvas.pack()
@@ -7084,7 +7084,7 @@ class Timer:
                         ahint(numM4)
                         
                         if tigau == 1:
-                            tgbutton.place(x = 130, y = 210)#henss1225
+                            tgbutton.place(x = 130, y = 210)#02161225
         #x = 5, y = 210
                         else:
                             tgbutton.place_forget()
@@ -7097,82 +7097,82 @@ class Timer:
                 
                         
                     if gengo == 2:
-                        mojiTg = tk.Text(height=1, width=62, wrap="none")#henss1222
+                        mojiTg = tk.Text(height=1, width=62, wrap="none")#02161222
                         #変更width=25
                         mojiTg.tag_configure("f", foreground="#FF0100")
                         mojiTg.tag_configure("r", foreground="#000000")
                         mojiTg.tag_configure("g", foreground="#FF0000")
-                        mojiTg.tag_configure("b", foreground="#000000")#henss1222？？？　何か入ってた
+                        mojiTg.tag_configure("b", foreground="#000000")#02161222？？？　何か入ってた
     #                     mojiTn.insert("end", "次‼", 'f')
-                        mojiTg.insert("end","　　　　　　　　　　　トレーに", 'r')#henss1222
+                        mojiTg.insert("end","　　　　　　　　　　　トレーに", 'r')#02161222
             #変更半角スペースあける
                         mojiTg.insert("end", str(numM4/100), 'g')
                         mojiTg.insert("end", "元ピッタリはらって!", 'b')
                         mojiTg.configure(state="disabled") # 読取専用に
                         mojiTg.pack(anchor='n',expand=1)
                     elif gengo == 3:
-                        mojiTd = tk.Text(height=1, width=62, wrap="none")#henss1222
+                        mojiTd = tk.Text(height=1, width=62, wrap="none")#02161222
                         #変更width=25
                         mojiTd.tag_configure("f", foreground="#FF0100")
                         mojiTd.tag_configure("r", foreground="#000000")
                         mojiTd.tag_configure("g", foreground="#FF0000")
                         mojiTd.tag_configure("b", foreground="#000000")
     #                     mojiTn.insert("end", "次‼", 'f')
-                        mojiTd.insert("end","　　　　　　　　　　　トレーに", 'r')#henss1222
+                        mojiTd.insert("end","　　　　　　　　　　　トレーに", 'r')#02161222
             #変更半角スペースあける
                         mojiTd.insert("end", str(numM4*100), 'g')
                         mojiTd.insert("end", "ドンピッタリはらって!", 'b')
                         mojiTd.configure(state="disabled") # 読取専用に
                         mojiTd.pack(anchor='n',expand=1)
                     elif gengo == 1:                        
-                        mojiTn = tk.Text(height=1, width=62, wrap="none")#henss1222
+                        mojiTn = tk.Text(height=1, width=62, wrap="none")#02161222
                         #変更width=25
                         mojiTn.tag_configure("f", foreground="#FF0100")
                         mojiTn.tag_configure("r", foreground="#000000")
                         mojiTn.tag_configure("g", foreground="#FF0000")
                         mojiTn.tag_configure("b", foreground="#000000")
     #                     mojiTn.insert("end", "次‼", 'f')
-                        mojiTn.insert("end","　　　　　　　　　　　トレーに", 'r')#henss1222
+                        mojiTn.insert("end","　　　　　　　　　　　トレーに", 'r')#02161222
             #変更半角スペースあける
                         mojiTn.insert("end", str(numM4), 'g')
                         mojiTn.insert("end", "円ピッタリはらって!", 'b')
                         mojiTn.configure(state="disabled") # 読取専用に
                         mojiTn.pack(anchor='n',expand=1)
                     else:
-                        emojiTn = tk.Text(height=1, width=62, wrap="none")#henss1223
+                        emojiTn = tk.Text(height=1, width=62, wrap="none")#02161223
                         emojiTn.tag_configure("r", foreground="#000000")
                         emojiTn.tag_configure("g", foreground="#FF0000")
                         emojiTn.tag_configure("b", foreground="#000000")
-                        emojiTn.insert("end", "　　　　　　　　　　　　2つの商品の", 'r')#henss1223
+                        emojiTn.insert("end", "　　　　　　　　　　　　2つの商品の", 'r')#02161223
     
                         emojiTn.insert("end", "合計額を", 'g')
                         emojiTn.insert("end", "ピッタリはらって!", 'b')
                         emojiTn.configure(state="disabled")
                         emojiTn.pack(anchor='n',expand=1)
                         
-                        canvas.create_image(50, 50, image=imgMG)#henss1225
+                        canvas.create_image(50, 50, image=imgMG)#02161225
         #50, 50, image=imgMG
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        canvas.create_image(210,50, image=imgMH)#henss1225
+                        canvas.create_image(210,50, image=imgMH)#02161225
         #210, 165, image=imgMH#
                         canvas.place(x=100, y=100)
                         canvas.pack()
             
-                        canvas.create_image(130, 50, image=imgSS109, tags = "mig")#nagai0125)
+                        canvas.create_image(130, 50, image=imgSS109, tags = "mig")#02160125)
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         #290, 165, image=imgSS115
-                        canvas.create_image(290, 50, image=imgSS115, tags = "mig")#nagai0125)
+                        canvas.create_image(290, 50, image=imgSS115, tags = "mig")#02160125)
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        canvas.create_image(370, 60, image=imgSS116)#henss1225
+                        canvas.create_image(370, 60, image=imgSS116)#02161225
                         #370, 165, image=imgSS116
                         canvas.place(x=100, y=100)
                         canvas.pack()                                                
                         
         
-                    canvas.create_image(650, 100, image=imgSS96)#henss1222
+                    canvas.create_image(650, 100, image=imgSS96)#02161222
                     canvas.place(x=150, y=150)
                     canvas.pack()
             
@@ -7426,7 +7426,7 @@ class Timer:
                         canvas.place(x=100, y=100)
                         canvas.pack()
         
-                    for vi in range(1):#henss1226
+                    for vi in range(1):#02161226
                         canvas.create_image(a1man, b1man, image=imgSS6, tags = "img")
                         canvas.place(x=100, y=100)
                         canvas.pack()
@@ -7442,58 +7442,58 @@ class Timer:
                         canvas.create_image(a5en, b5en, image=imgSS5, tags = "img8")
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                    if zaq == 1:#henss1226 tamesini zaqzaq mode 1set
+                    if zaq == 1:#02161226 tamesini zaqzaq mode 1set
     
-                        a100d = random.randint(1,700)#henss1221#班員 1,1100
-                        b100d = random.randint(200,600)#henss1221#班員 100,600
+                        a100d = random.randint(1,700)#02161221#hs 1,1100
+                        b100d = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a100d, b100d, image=imgSS94, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        a50d = random.randint(1,700)#henss1221#班員 1,1100
-                        b50d = random.randint(200,600)#henss1221#班員 100,600
+                        a50d = random.randint(1,700)#02161221#hs 1,1100
+                        b50d = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a50d, b50d, image=imgSS93, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a10d = random.randint(1,700)#henss1221#班員 1,1100
-                            b10d = random.randint(200,600)#henss1221#班員 100,600
+                            a10d = random.randint(1,700)#02161221#hs 1,1100
+                            b10d = random.randint(200,600)#02161221#hs 100,600
                             canvas.create_image(a10d, b10d, image=imgSS92, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                        a5d = random.randint(1,700)#henss1221#班員 1,1100
-                        b5d = random.randint(200,600)#henss1221#班員 100,600
+                        a5d = random.randint(1,700)#02161221#hs 1,1100
+                        b5d = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a5d, b5d, image=imgSS91, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a1d = random.randint(1,700)#henss1221#班員 1,1100
-                            b1d = random.randint(200,600)#henss1221#班員 100,600
+                            a1d = random.randint(1,700)#02161221#hs 1,1100
+                            b1d = random.randint(200,600)#02161221#hs 100,600
                             canvas.create_image(a1d, b1d, image=imgSS90, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                        a50c = random.randint(1,700)#henss1221#班員 1,1100
-                        b50c = random.randint(200,600)#henss1221#班員 100,600
+                        a50c = random.randint(1,700)#02161221#hs 1,1100
+                        b50c = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a50c, b50c, image=imgSS89, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a10c = random.randint(1,700)#henss1221#班員 1,1100
-                            b10c = random.randint(200,600)#henss1221#班員100,600
+                            a10c = random.randint(1,700)#02161221#hs 1,1100
+                            b10c = random.randint(200,600)#02161221#hs100,600
                             canvas.create_image(a10c, b10c, image=imgSS88, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                        a5c = random.randint(1,700)#henss1221#班員 1,1100
-                        b5c = random.randint(200,600)#henss1221#班員100,600
+                        a5c = random.randint(1,700)#02161221#hs 1,1100
+                        b5c = random.randint(200,600)#02161221#hs100,600
                         canvas.create_image(a5c, b5c, image=imgSS87, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a1c = random.randint(1,700)#henss1221#班員 1,1100
-                            b1c = random.randint(200,600)#henss1221#班員100,600
+                            a1c = random.randint(1,700)#02161221#hs 1,1100
+                            b1c = random.randint(200,600)#02161221#hs100,600
                             canvas.create_image(a1c, b1c, image=imgSS86, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                    zm4button.place(x=860, y=100)#henss1222
+                    zm4button.place(x=860, y=100)#02161222
                     
                     
                     existA = 10000
@@ -7511,7 +7511,7 @@ class Timer:
                     tagX = []
                     anahint(numM5)
                     if tigau == 1:
-                        tgbutton.place(x = 130, y = 210)#henss1225
+                        tgbutton.place(x = 130, y = 210)#02161225
                     else:
                         tgbutton.place_forget()
                 
@@ -7526,10 +7526,10 @@ class Timer:
                     
                     if zahyohn5 == 1:
                         hnbutton['text'] = "Q4正解"
-                        hnbutton.place(x = 5, y = 250)#henss1226
+                        hnbutton.place(x = 5, y = 250)#02161226
                         play5()
                         
-                        canvas.create_image(630, 300, image=imgSS106)#henss1225
+                        canvas.create_image(630, 300, image=imgSS106)#02161225
                     #250, 300, image=imgSS106
                         canvas.place(x=250, y=300)
                         canvas.pack()
@@ -7538,12 +7538,12 @@ class Timer:
                     elif zahyohn5 == 2:
                         existA = 100000
                         
-                        canvas.create_image(630, 300, image=imgSS107)#henss1225
+                        canvas.create_image(630, 300, image=imgSS107)#02161225
             #250, 300, image=imgSS107
                         canvas.place(x=250, y=300)
                         canvas.pack()
                     else:
-                        canvas.create_image(630, 300, image=imgSS108)#henss1225
+                        canvas.create_image(630, 300, image=imgSS108)#02161225
                 #250, 300, image=imgSS108
                         canvas.place(x=250, y=300)
                         canvas.pack()
@@ -7558,7 +7558,7 @@ class Timer:
                         ahint(numM5)
                         
                         if tigau == 1:
-                            tgbutton.place(x = 130, y = 210)#henss1225
+                            tgbutton.place(x = 130, y = 210)#02161225
         #x = 5, y = 210
                         else:
                             tgbutton.place_forget()
@@ -7569,78 +7569,78 @@ class Timer:
                     emojiTn.pack_forget()
                         
                     if gengo == 2:
-                        mojiTg = tk.Text(height=1, width=62, wrap="none")#henss1222
+                        mojiTg = tk.Text(height=1, width=62, wrap="none")#02161222
                         #width=25
                         mojiTg.tag_configure("f", foreground="#FF0100")
                         mojiTg.tag_configure("r", foreground="#000000")
                         mojiTg.tag_configure("g", foreground="#FF0000")
                         mojiTg.tag_configure("b", foreground="#000000")
     #                     mojiTn.insert("end", "次‼", 'f')
-                        mojiTg.insert("end","　　　　　　　　　　　トレーに", 'r')#henss1222
+                        mojiTg.insert("end","　　　　　　　　　　　トレーに", 'r')#02161222
             #変更半角スペースあける
                         mojiTg.insert("end", str(numM5/100), 'g')
                         mojiTg.insert("end", "元ピッタリはらって!", 'b')
                         mojiTg.configure(state="disabled") # 読取専用に
                         mojiTg.pack(anchor='n',expand=1)
                     elif gengo == 3:
-                        mojiTd = tk.Text(height=1, width=62, wrap="none")#henss1222
+                        mojiTd = tk.Text(height=1, width=62, wrap="none")#02161222
                         #width=25
                         mojiTd.tag_configure("f", foreground="#FF0100")
                         mojiTd.tag_configure("r", foreground="#000000")
                         mojiTd.tag_configure("g", foreground="#FF0000")
                         mojiTd.tag_configure("b", foreground="#000000")
     #                     mojiTn.insert("end", "次‼", 'f')
-                        mojiTd.insert("end","　　　　　　　　　　　トレーに", 'r')#henss1222
+                        mojiTd.insert("end","　　　　　　　　　　　トレーに", 'r')#02161222
             #変更半角スペースあける
                         mojiTd.insert("end", str(numM5*100), 'g')
                         mojiTd.insert("end", "ドンピッタリはらって!", 'b')
                         mojiTd.configure(state="disabled") # 読取専用に
                         mojiTd.pack(anchor='n',expand=1)
                     elif gengo == 1:                        
-                        mojiTn = tk.Text(height=1, width=62, wrap="none")#henss1222
+                        mojiTn = tk.Text(height=1, width=62, wrap="none")#02161222
                         #width=25
                         mojiTn.tag_configure("f", foreground="#FF0100")
                         mojiTn.tag_configure("r", foreground="#000000")
                         mojiTn.tag_configure("g", foreground="#FF0000")
                         mojiTn.tag_configure("b", foreground="#000000")
     #                     mojiTn.insert("end", "次‼", 'f')
-                        mojiTn.insert("end","　　　　　　　　　　　トレーに", 'r')#henss1222
+                        mojiTn.insert("end","　　　　　　　　　　　トレーに", 'r')#02161222
             #変更半角スペースあける
                         mojiTn.insert("end", str(numM5), 'g')
                         mojiTn.insert("end", "円ピッタリはらって!", 'b')
                         mojiTn.configure(state="disabled") # 読取専用に
                         mojiTn.pack(anchor='n',expand=1)
                     else:
-                        emojiTn = tk.Text(height=1, width=62, wrap="none")#henss1223
+                        emojiTn = tk.Text(height=1, width=62, wrap="none")#02161223
                         emojiTn.tag_configure("r", foreground="#000000")
                         emojiTn.tag_configure("g", foreground="#FF0000")
                         emojiTn.tag_configure("b", foreground="#000000")
-                        emojiTn.insert("end", "　　　　　　　　　　　　2つの商品の", 'r')#henss1223
+                        emojiTn.insert("end", "　　　　　　　　　　　　2つの商品の", 'r')#02161223
     
                         emojiTn.insert("end", "合計額を", 'g')
                         emojiTn.insert("end", "ピッタリはらって!", 'b')
                         emojiTn.configure(state="disabled")
                         emojiTn.pack(anchor='n',expand=1)
                         
-                        canvas.create_image(50, 50, image=imgMI)#henss1225
+                        canvas.create_image(50, 50, image=imgMI)#02161225
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        canvas.create_image(210, 50, image=imgMJ)#henss1225
+                        canvas.create_image(210, 50, image=imgMJ)#02161225
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        canvas.create_image(130, 50, image=imgSS109, tags = "mig")#nagai0125)
+                        canvas.create_image(130, 50, image=imgSS109, tags = "mig")#02160125)
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        canvas.create_image(290, 50, image=imgSS115, tags = "mig")#nagai0125)
+                        canvas.create_image(290, 50, image=imgSS115, tags = "mig")#02160125)
                         
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        canvas.create_image(370, 60, image=imgSS116)#henss1225
+                        canvas.create_image(370, 60, image=imgSS116)#02161225
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         
                         flag += 1
-                    canvas.create_image(650, 100, image=imgSS96)#henss1222
+                    canvas.create_image(650, 100, image=imgSS96)#02161222
                     canvas.place(x=150, y=150)
                     canvas.pack()
                     
@@ -7893,7 +7893,7 @@ class Timer:
                         canvas.place(x=100, y=100)
                         canvas.pack()
                     
-                    for vii in range(1):#henss1226
+                    for vii in range(1):#02161226
                         canvas.create_image(a1man, b1man, image=imgSS6, tags = "img")
                         canvas.place(x=100, y=100)
                         canvas.pack()
@@ -7909,60 +7909,60 @@ class Timer:
                         canvas.create_image(a5en, b5en, image=imgSS5, tags = "img8")
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                    if zaq == 1:#henss1226 tamesini zaqzaq mode 1set
+                    if zaq == 1:#02161226 tamesini zaqzaq mode 1set
     
-                        a100d = random.randint(1,700)#henss1221#班員 1,1100
-                        b100d = random.randint(200,600)#henss1221#班員 100,600
+                        a100d = random.randint(1,700)#02161221#hs 1,1100
+                        b100d = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a100d, b100d, image=imgSS94, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
-                        a50d = random.randint(1,700)#henss1221#班員 1,1100
-                        b50d = random.randint(200,600)#henss1221#班員 100,600
+                        a50d = random.randint(1,700)#02161221#hs 1,1100
+                        b50d = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a50d, b50d, image=imgSS93, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a10d = random.randint(1,700)#henss1221#班員 1,1100
-                            b10d = random.randint(200,600)#henss1221#班員 100,600
+                            a10d = random.randint(1,700)#02161221#hs 1,1100
+                            b10d = random.randint(200,600)#02161221#hs 100,600
                             canvas.create_image(a10d, b10d, image=imgSS92, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                        a5d = random.randint(1,700)#henss1221#班員 1,1100
-                        b5d = random.randint(200,600)#henss1221#班員 100,600
+                        a5d = random.randint(1,700)#02161221#hs 1,1100
+                        b5d = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a5d, b5d, image=imgSS91, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a1d = random.randint(1,700)#henss1221#班員 1,1100
-                            b1d = random.randint(200,600)#henss1221#班員 100,600
+                            a1d = random.randint(1,700)#02161221#hs 1,1100
+                            b1d = random.randint(200,600)#02161221#hs 100,600
                             canvas.create_image(a1d, b1d, image=imgSS90, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                        a50c = random.randint(1,700)#henss1221#班員 1,1100
-                        b50c = random.randint(200,600)#henss1221#班員 100,600
+                        a50c = random.randint(1,700)#02161221#hs 1,1100
+                        b50c = random.randint(200,600)#02161221#hs 100,600
                         canvas.create_image(a50c, b50c, image=imgSS89, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a10c = random.randint(1,700)#henss1221#班員 1,1100
-                            b10c = random.randint(200,600)#henss1221#班員100,600
+                            a10c = random.randint(1,700)#02161221#hs 1,1100
+                            b10c = random.randint(200,600)#02161221#hs100,600
                             canvas.create_image(a10c, b10c, image=imgSS88, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
-                        a5c = random.randint(1,700)#henss1221#班員 1,1100
-                        b5c = random.randint(200,600)#henss1221#班員100,600
+                        a5c = random.randint(1,700)#02161221#hs 1,1100
+                        b5c = random.randint(200,600)#02161221#hs100,600
                         canvas.create_image(a5c, b5c, image=imgSS87, tags = "img1")
                         canvas.place(x=100, y=100)
                         canvas.pack()
                         for i in range(4):
-                            a1c = random.randint(1,700)#henss1221#班員 1,1100
-                            b1c = random.randint(200,600)#henss1221#班員100,600
+                            a1c = random.randint(1,700)#02161221#hs 1,1100
+                            b1c = random.randint(200,600)#02161221#hs100,600
                             canvas.create_image(a1c, b1c, image=imgSS86, tags = "img1")
                             canvas.place(x=100, y=100)
                             canvas.pack()
                     
                         
-                    zm5button.place(x=860, y=100)#henss1222
+                    zm5button.place(x=860, y=100)#02161222
                     
                     existA = 100000
                 elif existA == 100000:
@@ -7982,7 +7982,7 @@ class Timer:
                 if existA == 100000:
                     existA = 300000
                     hnbutton.place_forget()
-                    button.place(x = 550, y = 550)#henss1226
+                    button.place(x = 550, y = 550)#02161226
                     mojiTn.pack_forget()
                     k3button.place_forget()
                     k15button.place_forget()                    
@@ -7994,7 +7994,7 @@ class Timer:
                     
                     if zahyohn5 == 1:
                         hnbutton['text'] = "Q5正解"
-                        hnbutton.place(x = 5, y = 250)#henss1226
+                        hnbutton.place(x = 5, y = 250)#02161226
                         play5()
                         
                         
@@ -8017,7 +8017,7 @@ class Timer:
                 elif existA == 300000:
                     canvas.delete("all")
                     mojiA.pack(anchor='n',expand=1)
-                    canvas.create_image(650, 100, image=imgSS96)#henss1222
+                    canvas.create_image(650, 100, image=imgSS96)#02161222
                     canvas.place(x=150, y=150)
                     canvas.pack()
                     
@@ -8032,7 +8032,7 @@ class Timer:
                     existA = 1000000
                     
        
-            time.sleep(0.4)#henss で　1226 〇表示を修理　0.4にしてみる
+            time.sleep(0.4)#0216 で　1226 〇表示を修理　0.4にしてみる
  
         loop = asyncio.get_event_loop()#jikkousaretenai0205
         loop.run_until_complete(sleeping(2))
@@ -8069,7 +8069,7 @@ k3button = tk.Button(root, text = "はらう!",command=k3, bg = "white", fg = "r
 k3button.place(x = 500, y = 250)#早く連続押すとバグって止まります、もう改善不能？
 k15button = tk.Button(root, text = "あきらめる!",command=k15, bg = "white", fg = "blue", font = ("", 20))
 hnbutton = tk.Button(root, text = "正解!",state=tk.DISABLED, bg = "white", fg = "red", font = ("", 30))
-tgbutton = tk.Button(root, text = "ヒントみてね",state=tk.DISABLED, bg = "white", fg = "red", font = ("", 30))#0125 班員忘れてる
+tgbutton = tk.Button(root, text = "ヒントみてね",state=tk.DISABLED, bg = "white", fg = "red", font = ("", 30))#0125 hs忘れてる
 fontStyle = tkFont.Font(family="Lucida Grande", size=20)
 nkbutton = tk.Button(root, text = "のこりタイム",state=tk.DISABLED, bg = "green", fg = "white", font=fontStyle)
 bln = tk.BooleanVar()
